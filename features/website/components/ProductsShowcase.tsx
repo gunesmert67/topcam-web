@@ -30,13 +30,13 @@ export function ProductsShowcase() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {featured.map((product) => (
             <div
               key={product.id}
               className="flex flex-col rounded-3xl border border-border bg-card overflow-hidden shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:-translate-y-1 group"
             >
-              <div className="relative aspect-square w-full overflow-hidden bg-white border-b border-border p-5 flex items-center justify-center">
+              <div className="relative aspect-square w-full overflow-hidden bg-white border-b border-border p-4 sm:p-5 flex items-center justify-center">
                 <Image
                   src={product.image}
                   alt={product.title}
@@ -50,18 +50,18 @@ export function ProductsShowcase() {
                 )}
               </div>
 
-              <div className="flex flex-1 flex-col p-5">
+              <div className="flex flex-1 flex-col p-4 sm:p-5">
                 <span className="text-[11px] font-bold text-blue-600 uppercase tracking-wider mb-1">
                   {product.category}
                 </span>
-                <h3 className="text-sm font-bold text-foreground mb-2 line-clamp-2">
+                <h3 className="text-sm font-bold text-foreground mb-1.5 line-clamp-2">
                   {product.title}
                 </h3>
-                <p className="text-xs text-muted-foreground line-clamp-2 mb-4">
+                <p className="text-xs text-muted-foreground line-clamp-2 mb-3.5">
                   {product.summary}
                 </p>
 
-                <div className="flex flex-col gap-1.5 mb-5 mt-auto text-[11px] text-muted-foreground">
+                <div className="flex flex-col gap-1.5 mb-4 mt-auto text-[11px] text-muted-foreground">
                   {product.specs.slice(0, 2).map((s, idx) => (
                     <div key={idx} className="flex justify-between border-b border-border/50 pb-1">
                       <span className="font-medium text-foreground">{s.label}:</span>
@@ -74,7 +74,7 @@ export function ProductsShowcase() {
                   href={`https://wa.me/905425710078?text=Merhaba,%20${encodeURIComponent(product.title)}%20fiyat%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition-colors"
+                  className="w-full min-h-[40px] flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all active:scale-[0.99] shadow-sm"
                 >
                   <span>Fiyat Teklifi Al</span>
                 </a>

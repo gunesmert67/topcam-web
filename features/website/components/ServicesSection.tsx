@@ -6,12 +6,12 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export function ServicesSection() {
   return (
-    <section className="py-20 bg-secondary/50 select-none">
+    <section className="py-14 sm:py-20 bg-secondary/50 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Bölüm Başlığı */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-2 sm:mb-3">
             Hizmet Alanlarımız
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
@@ -20,27 +20,27 @@ export function ServicesSection() {
         </div>
 
         {/* Hizmet Kartları Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {servicesData.map((service) => (
             <div
               key={service.id}
               className="group flex flex-col rounded-3xl border border-border bg-card overflow-hidden shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:-translate-y-1"
             >
               {/* Görsel Vitrini - Tam Sığdırılmış, Sıfır Kırpılma */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-white border-b border-border p-6 flex items-center justify-center">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-white border-b border-border p-4 sm:p-6 flex items-center justify-center">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
                   className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
                 />
-                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow-sm">
+                <span className="absolute top-3 left-3 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-blue-600 text-white text-[11px] sm:text-xs font-bold shadow-sm">
                   {service.badge}
                 </span>
               </div>
 
               {/* İçerik */}
-              <div className="flex flex-1 flex-col p-6 sm:p-7">
+              <div className="flex flex-1 flex-col p-5 sm:p-7">
                 <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
                   {service.title}
                 </h3>

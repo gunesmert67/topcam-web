@@ -11,7 +11,7 @@ export function PublicFooter() {
   return (
     <footer className="w-full bg-[#070D1E] border-t border-white/10 text-slate-300 pt-16 pb-8 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-12 border-b border-white/10">
           
           {/* Kolon 1: Marka ve Açıklama */}
           <div className="flex flex-col gap-4">
@@ -181,9 +181,9 @@ export function PublicFooter() {
         </div>
 
         {/* Alt Telif ve Yasal Linkler */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center sm:text-left">
           <p>© {currentYear} {siteConfig.name}. Tüm hakları saklıdır.</p>
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4">
             <Link href={ROUTES.kvkk} className="hover:text-slate-200 transition-colors">
               KVKK Aydınlatma
             </Link>

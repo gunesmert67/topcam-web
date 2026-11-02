@@ -30,7 +30,7 @@ const upcomingArticles = [
 
 export function BlogContent() {
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
@@ -48,7 +48,7 @@ export function BlogContent() {
           {upcomingArticles.map((article, idx) => (
             <div
               key={idx}
-              className="flex flex-col p-6 sm:p-7 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 relative overflow-hidden"
+              className="flex flex-col p-5 sm:p-7 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 relative overflow-hidden"
             >
               <div className="flex items-center justify-between gap-2 mb-3">
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
@@ -76,7 +76,7 @@ export function BlogContent() {
         </div>
 
         {/* Sorularınız için İletişim Kutusu */}
-        <div className="rounded-3xl bg-[#0B132B] text-white p-8 sm:p-10 text-center flex flex-col items-center shadow-apple-lg">
+        <div className="rounded-3xl bg-[#0B132B] text-white p-6 sm:p-10 text-center flex flex-col items-center shadow-apple-lg">
           <BookOpen className="w-10 h-10 text-blue-400 mb-3" />
           <h3 className="text-xl sm:text-2xl font-bold mb-2">
             Aklınıza Takılan Bir Güvenlik Konusu mu Var?
@@ -88,7 +88,7 @@ export function BlogContent() {
             href={siteConfig.contact.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md transition-all hover:scale-105"
+            className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md transition-all active:scale-[0.99] hover:scale-105"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp’tan Kadir Topçam’a Sor</span>

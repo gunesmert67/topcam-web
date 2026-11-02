@@ -59,7 +59,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-apple-lg">
+    <div className="rounded-3xl border border-border bg-card p-4 sm:p-8 shadow-apple-lg">
       <h3 className="text-xl font-bold text-foreground mb-2">Ücretsiz Keşif & Fiyat Teklifi İsteyin</h3>
       <p className="text-sm text-muted-foreground mb-6">
         İhtiyacınız olan güvenlik veya kamera sistemini belirtin, size en uygun çözümü ve fiyatı hazırlayalım.
@@ -136,7 +136,7 @@ export function ContactForm() {
                 id="contact-service"
                 value={formData.serviceType}
                 onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-                className="h-10 w-full rounded-xl border border-input bg-card px-3.5 py-2 text-sm text-foreground transition-all outline-none focus-visible:border-primary focus-visible:ring-3 focus-visible:ring-primary/20"
+                className="h-11 sm:h-10 w-full rounded-xl border border-input bg-card px-3.5 py-2 text-base sm:text-sm text-foreground transition-all outline-none focus-visible:border-primary focus-visible:ring-3 focus-visible:ring-primary/20"
               >
                 <option value="Güvenlik Kamera Sistemi (IP/AHD/Analog)">İş Yeri / Ev Güvenlik Kamera Sistemi</option>
                 <option value="Tır & Ağır Vasıta Kamera Montajı">Tır / Kamyon Kör Nokta & Mobil DVR</option>
@@ -172,7 +172,7 @@ export function ContactForm() {
             type="submit"
             disabled={status === 'loading'}
             size="lg"
-            className="w-full mt-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-900/20"
+            className="w-full min-h-[46px] mt-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-900/20 active:scale-[0.99] transition-all"
           >
             {status === 'loading' ? (
               <>

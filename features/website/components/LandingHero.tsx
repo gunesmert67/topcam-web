@@ -12,12 +12,12 @@ export function LandingHero() {
       <div className="absolute top-1/2 right-10 w-[300px] h-[300px] bg-cyan-500/10 blur-[100px] pointer-events-none rounded-full" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Sol Kolon: Metin & CTA */}
-          <div className="lg:col-span-7 flex flex-col gap-6 text-center lg:text-left">
+          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 text-center lg:text-left">
             {/* Ana Başlık */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.2]">
               Mekanınız ve Araçlarınız İçin{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300">
                 Kesintisiz Güvenlik
@@ -30,40 +30,40 @@ export function LandingHero() {
             </p>
 
             {/* Hızlı Avantaj Maddeleri */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 text-xs sm:text-sm text-slate-200 text-left">
-              <div className="flex items-center gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 pt-1 text-xs sm:text-sm text-slate-200 text-left">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Gece Renkli Görüş</span>
+                <span className="truncate">Gece Renkli Görüş</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Kusursuz Gizli Kablo</span>
+                <span className="truncate">Kusursuz Gizli Kablo</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Telefondan 7/24 İzleme</span>
+                <span className="truncate">Telefondan 7/24 İzleme</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Tır & Ağır Vasıta Seti</span>
+                <span className="truncate">Tır & Ağır Vasıta</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>İş Makinesi Kör Nokta</span>
+                <span className="truncate">İş Makinesi Kör Nokta</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-                <span>Hızlı Teknik Destek</span>
+                <span className="truncate">Hızlı Teknik Servis</span>
               </div>
             </div>
 
             {/* Eylem Butonları */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2 sm:pt-3">
               <a
                 href={siteConfig.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-xl shadow-blue-900/40 transition-all hover:scale-[1.02]"
+                className="w-full sm:w-auto min-h-[46px] inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-xl shadow-blue-900/40 active:scale-[0.99] transition-all hover:scale-[1.02]"
               >
                 <span>Hemen Fiyat & Teklif Al</span>
                 <ArrowRight className="w-4 h-4" />
@@ -71,7 +71,7 @@ export function LandingHero() {
 
               <a
                 href={`tel:${siteConfig.contact.phoneRaw}`}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/15 transition-all hover:scale-[1.02]"
+                className="w-full sm:w-auto min-h-[46px] inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/15 active:scale-[0.99] transition-all hover:scale-[1.02]"
               >
                 <Phone className="w-4 h-4 text-blue-400" />
                 <span>{siteConfig.contact.phoneFormatted}</span>
@@ -79,9 +79,9 @@ export function LandingHero() {
             </div>
 
             {/* İletişim e-posta & Instagram mini info */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-slate-400">
-              <span>📧 {siteConfig.contact.email}</span>
-              <span>•</span>
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-1 sm:pt-2 text-xs text-slate-400">
+              <span className="break-all">📧 {siteConfig.contact.email}</span>
+              <span className="hidden sm:inline">•</span>
               <a
                 href={siteConfig.contact.instagram}
                 target="_blank"
@@ -126,12 +126,12 @@ export function LandingHero() {
               </div>
 
               {/* Alt Floating Kartlar - Tam Sığdırılmış Görseller */}
-              <div className="mt-4 grid grid-cols-2 gap-3.5">
+              <div className="mt-3.5 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5">
                 <Link
                   href={ROUTES.serviceTrucks}
-                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
+                  className="flex items-center gap-3 p-2.5 sm:p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
                 >
-                  <div className="relative w-14 h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
+                  <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/tir-arac-kamera.webp"
                       alt="Tır Kamera Sistemi"
@@ -139,17 +139,17 @@ export function LandingHero() {
                       className="object-contain p-1 transition-transform duration-200 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-left">
-                    <h4 className="text-xs font-bold text-white">Tır & Kamyon</h4>
-                    <p className="text-[10px] text-slate-300">Kör nokta & Mobil DVR</p>
+                  <div className="text-left min-w-0">
+                    <h4 className="text-xs font-bold text-white truncate">Tır & Kamyon</h4>
+                    <p className="text-[10px] text-slate-300 truncate">Kör nokta & Mobil DVR</p>
                   </div>
                 </Link>
 
                 <Link
                   href={ROUTES.servicePassengerCars}
-                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
+                  className="flex items-center gap-3 p-2.5 sm:p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
                 >
-                  <div className="relative w-14 h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
+                  <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/on-arka-arac-kamera.webp"
                       alt="Binek Araç Yol Kayıt Kamerası"
@@ -157,9 +157,9 @@ export function LandingHero() {
                       className="object-contain p-1 transition-transform duration-200 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-left">
-                    <h4 className="text-xs font-bold text-white">Binek Araç</h4>
-                    <p className="text-[10px] text-slate-300">Ön & Arka Yol Kayıt</p>
+                  <div className="text-left min-w-0">
+                    <h4 className="text-xs font-bold text-white truncate">Binek Araç</h4>
+                    <p className="text-[10px] text-slate-300 truncate">Ön & Arka Yol Kayıt</p>
                   </div>
                 </Link>
               </div>

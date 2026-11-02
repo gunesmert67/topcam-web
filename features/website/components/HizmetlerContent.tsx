@@ -5,7 +5,7 @@ import { CheckCircle2, ArrowRight, ShieldCheck, Phone, Wrench } from 'lucide-rea
 
 export function HizmetlerContent() {
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Başlık Bölümü */}
@@ -26,13 +26,13 @@ export function HizmetlerContent() {
               <div
                 key={service.id}
                 id={service.slug}
-                className="scroll-mt-28 rounded-3xl border border-border bg-card p-6 sm:p-10 shadow-apple-lg transition-all"
+                className="scroll-mt-28 rounded-3xl border border-border bg-card p-5 sm:p-8 lg:p-10 shadow-apple-lg transition-all"
               >
-                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-10 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
+                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
                   
                   {/* Görsel */}
                   <div className={`lg:col-span-5 ${isEven ? '' : 'lg:order-2'}`}>
-                    <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white border border-border p-6 flex items-center justify-center shadow-sm">
+                    <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white border border-border p-4 sm:p-6 flex items-center justify-center shadow-sm">
                       <Image
                         src={service.image}
                         alt={service.title}
@@ -45,12 +45,12 @@ export function HizmetlerContent() {
                     </div>
 
                     {/* Teknik Özet Tablosu */}
-                    <div className="mt-4 rounded-xl bg-secondary p-4 border border-border text-xs flex flex-col gap-2">
+                    <div className="mt-4 rounded-xl bg-secondary p-3.5 sm:p-4 border border-border text-xs flex flex-col gap-2">
                       <span className="font-bold text-foreground">Teknik Özellikler:</span>
                       {service.specs.map((sp, i) => (
-                        <div key={i} className="flex justify-between border-b border-border/50 pb-1 text-muted-foreground">
+                        <div key={i} className="flex flex-col xs:flex-row xs:justify-between border-b border-border/50 pb-1 text-muted-foreground gap-0.5">
                           <span className="font-medium text-foreground">{sp.label}:</span>
-                          <span className="text-right">{sp.value}</span>
+                          <span className="xs:text-right text-foreground/80">{sp.value}</span>
                         </div>
                       ))}
                     </div>
@@ -58,7 +58,7 @@ export function HizmetlerContent() {
 
                   {/* Metin İçeriği */}
                   <div className={`lg:col-span-7 flex flex-col gap-4 ${isEven ? '' : 'lg:order-1'}`}>
-                    <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground">
                       {service.title}
                     </h2>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
@@ -66,12 +66,12 @@ export function HizmetlerContent() {
                     </p>
 
                     {/* Öne Çıkan Özellikler */}
-                    <div className="pt-2">
+                    <div className="pt-1 sm:pt-2">
                       <h3 className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
                         <Wrench className="w-4 h-4 text-blue-600" />
-                        <span>Sistem Avantajları & Özellikleri:</span>
+                        <span>Sistem Avantajları:</span>
                       </h3>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5">
                         {service.features.map((feat, i) => (
                           <div key={i} className="flex items-start gap-2 text-xs sm:text-sm text-foreground/85 font-medium">
                             <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
@@ -82,15 +82,15 @@ export function HizmetlerContent() {
                     </div>
 
                     {/* Uygulama Alanları */}
-                    <div className="pt-2">
+                    <div className="pt-1 sm:pt-2">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
                         Uygulama Alanları:
                       </h3>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-1.5 sm:gap-2">
                         {service.applicationAreas.map((area, i) => (
                           <span
                             key={i}
-                            className="px-3 py-1 rounded-xl bg-secondary text-foreground text-xs font-semibold border border-border"
+                            className="px-2.5 sm:px-3 py-1 rounded-xl bg-secondary text-foreground text-xs font-semibold border border-border"
                           >
                             {area}
                           </span>
@@ -99,12 +99,12 @@ export function HizmetlerContent() {
                     </div>
 
                     {/* Butonlar */}
-                    <div className="pt-4 border-t border-border flex flex-wrap items-center gap-3">
+                    <div className="pt-4 border-t border-border flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                       <a
                         href={`https://wa.me/905425710078?text=Merhaba,%20${encodeURIComponent(service.title)}%20hizmetiniz%20hakk%C4%B1nda%20fiyat%20ve%20ke%C5%9Fif%20talebinde%20bulunmak%20istiyorum.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
+                        className="inline-flex items-center justify-center min-h-[44px] gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.99] hover:scale-105"
                       >
                         <span>WhatsApp’tan Fiyat & Keşif İste</span>
                         <ArrowRight className="w-4 h-4" />
@@ -112,7 +112,7 @@ export function HizmetlerContent() {
 
                       <a
                         href={`tel:${siteConfig.contact.phoneRaw}`}
-                        className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-secondary hover:bg-slate-200 text-foreground font-semibold text-xs sm:text-sm border border-border transition-colors"
+                        className="inline-flex items-center justify-center min-h-[44px] gap-2 px-5 py-3 rounded-xl bg-secondary hover:bg-slate-200 text-foreground font-semibold text-xs sm:text-sm border border-border transition-colors active:scale-[0.99]"
                       >
                         <Phone className="w-4 h-4 text-blue-600" />
                         <span>Hemen Telefonla Danış</span>

@@ -47,13 +47,13 @@ export function WhyUsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {features.map((item, index) => {
             const Icon = item.icon
             return (
               <div
                 key={index}
-                className="flex flex-col p-6 sm:p-7 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:border-blue-200 group"
+                className="flex flex-col p-5 sm:p-7 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:border-blue-200 group"
               >
                 <div className="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                   <Icon className="w-5 h-5" />

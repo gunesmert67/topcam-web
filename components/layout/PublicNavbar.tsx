@@ -42,18 +42,18 @@ export function PublicNavbar() {
       {/* ─── Yüzen Kapsül Navbar (Havkom Tarzı Floating Pill) ─── */}
       <header
         className={cn(
-          'fixed top-3 inset-x-4 sm:inset-x-6 lg:inset-x-[75px] xl:inset-x-32 z-50',
+          'fixed top-2.5 sm:top-3 inset-x-3 sm:inset-x-6 lg:inset-x-[75px] xl:inset-x-32 z-50',
           'border border-white/15 rounded-2xl bg-[#0B132B] shadow-xl shadow-black/30'
         )}
       >
-        <div className="flex h-14 items-center justify-between px-4 sm:px-6">
+        <div className="flex h-14 items-center justify-between px-3 sm:px-6">
           {/* Logo & Marka */}
           <Link
             href={ROUTES.home}
             onClick={handleLogoClick}
-            className="flex items-center gap-3 select-none group"
+            className="flex items-center gap-2.5 sm:gap-3 select-none group min-w-0"
           >
-            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/images/topcam-logo.webp"
                 alt="Topçam Güvenlik Sistemleri Logo"
@@ -63,12 +63,12 @@ export function PublicNavbar() {
                 priority
               />
             </div>
-            <div className="flex flex-col">
-              <span className="text-base font-bold leading-none tracking-tight text-white flex items-center gap-1.5">
+            <div className="flex flex-col truncate">
+              <span className="text-sm sm:text-base font-bold leading-none tracking-tight text-white flex items-center gap-1.5">
                 TOPÇAM
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
               </span>
-              <span className="text-[9px] text-blue-300 font-bold tracking-[0.2em] uppercase mt-0.5">
+              <span className="text-[8px] sm:text-[9px] text-blue-300 font-bold tracking-[0.18em] sm:tracking-[0.2em] uppercase mt-0.5 truncate">
                 Güvenlik Sistemleri
               </span>
             </div>
@@ -121,18 +121,18 @@ export function PublicNavbar() {
           </div>
 
           {/* Mobil Menü Butonları */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0">
             <a
               href={`tel:${siteConfig.contact.phoneRaw}`}
               aria-label="Telefonla Ara"
-              className="p-1.5 rounded-xl text-white bg-white/10 hover:bg-white/20 transition-colors"
+              className="min-h-[38px] min-w-[38px] flex items-center justify-center p-2 rounded-xl text-white bg-white/10 hover:bg-white/20 active:scale-95 transition-all"
             >
               <Phone className="w-4 h-4 text-blue-400" />
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-1.5 rounded-xl text-white hover:bg-white/10 transition-colors"
+              className="min-h-[38px] min-w-[38px] flex items-center justify-center p-2 rounded-xl text-white bg-white/10 hover:bg-white/20 active:scale-95 transition-all"
               aria-label={mobileMenuOpen ? 'Menüyü Kapat' : 'Menüyü Aç'}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -157,14 +157,14 @@ export function PublicNavbar() {
         inert={!mobileMenuOpen ? true : undefined}
         aria-hidden={!mobileMenuOpen}
         className={cn(
-          'lg:hidden fixed inset-x-4 sm:inset-x-6 top-[calc(0.75rem+3.5rem+0.5rem)] max-h-[calc(100dvh-5.5rem)] bg-[#0B132B] z-[60] overflow-y-auto rounded-3xl border border-white/15 p-5 shadow-2xl shadow-black/50',
+          'lg:hidden fixed inset-x-3 sm:inset-x-6 top-[calc(0.625rem+3.5rem+0.5rem)] max-h-[calc(100dvh-5rem)] bg-[#0B132B] z-[60] overflow-y-auto rounded-3xl border border-white/15 p-4 sm:p-5 shadow-2xl shadow-black/50',
           'transition-all duration-200 ease-out',
           mobileMenuOpen
             ? 'opacity-100 translate-y-0 scale-100 visible pointer-events-auto'
             : 'opacity-0 -translate-y-2 scale-[0.98] invisible pointer-events-none'
         )}
       >
-        <nav className="flex flex-col gap-1">
+        <nav className="flex flex-col gap-1.5">
           {navLinks.map((link) => {
             const isActive = pathname === link.href || (link.href !== ROUTES.home && pathname.startsWith(link.href))
             return (
@@ -173,7 +173,7 @@ export function PublicNavbar() {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
-                  'flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors',
+                  'flex items-center justify-between min-h-[44px] px-4 py-3 rounded-xl text-sm font-semibold transition-all active:scale-[0.99]',
                   isActive
                     ? 'bg-white text-[#0B132B]'
                     : 'text-slate-200 hover:bg-white/10 hover:text-white'
@@ -189,7 +189,7 @@ export function PublicNavbar() {
         <div className="pt-4 mt-3 border-t border-white/10 flex flex-col gap-2">
           <a
             href={`tel:${siteConfig.contact.phoneRaw}`}
-            className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-white/10 text-white font-semibold text-xs border border-white/10"
+            className="flex items-center justify-center gap-2 w-full min-h-[44px] py-3 rounded-xl bg-white/10 text-white font-semibold text-xs border border-white/10 active:scale-[0.99] transition-all"
           >
             <Phone className="w-3.5 h-3.5 text-blue-400" />
             <span>{siteConfig.contact.phoneFormatted}</span>
@@ -198,7 +198,7 @@ export function PublicNavbar() {
             href={siteConfig.contact.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40"
+            className="flex items-center justify-center gap-2 w-full min-h-[44px] py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 active:scale-[0.99] transition-all"
           >
             <span>WhatsApp Fiyat & Bilgi</span>
           </a>

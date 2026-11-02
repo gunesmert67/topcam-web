@@ -2,9 +2,9 @@ import { siteConfig } from '@/config/site'
 
 export function GizlilikContent() {
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-12 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-extrabold text-foreground mb-6">
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4 sm:mb-6">
           Gizlilik Politikası
         </h1>
 

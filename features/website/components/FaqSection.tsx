@@ -13,10 +13,10 @@ export function FaqSection() {
   }
 
   return (
-    <section className="py-20 bg-background select-none">
+    <section className="py-14 sm:py-20 bg-background select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-2">
             Sıkça Sorulan Sorular
           </h2>
@@ -25,7 +25,7 @@ export function FaqSection() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-3.5">
+        <div className="flex flex-col gap-3">
           {faqData.map((item, index) => {
             const isOpen = openIndex === index
             return (
@@ -41,9 +41,9 @@ export function FaqSection() {
                 <button
                   type="button"
                   onClick={() => toggle(index)}
-                  className="flex w-full items-center justify-between p-5 sm:p-6 text-left"
+                  className="flex w-full items-center justify-between p-4 sm:p-6 text-left min-h-[48px] active:bg-slate-50 transition-colors"
                 >
-                  <span className="text-base font-bold text-foreground pr-4">
+                  <span className="text-sm sm:text-base font-bold text-foreground pr-3 sm:pr-4">
                     {item.question}
                   </span>
                   <ChevronDown
@@ -54,7 +54,7 @@ export function FaqSection() {
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 sm:pb-6 text-sm text-muted-foreground leading-relaxed animate-in fade-in duration-200 border-t border-border/50 pt-3">
+                  <div className="px-4 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed animate-in fade-in duration-200 border-t border-border/50 pt-3">
                     {item.answer}
                   </div>
                 )}

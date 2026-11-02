@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site'
 
 export function HakkimizdaContent() {
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
@@ -66,22 +66,22 @@ export function HakkimizdaContent() {
         </div>
 
         {/* 2'li Özet Kart */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="p-6 sm:p-7 rounded-3xl border border-border bg-card shadow-apple flex flex-col gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+          <div className="p-5 sm:p-7 rounded-3xl border border-border bg-card shadow-apple flex flex-col gap-2.5">
             <div className="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-1">
               <Target className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">Önceliğimiz</h3>
+            <h3 className="text-base sm:text-lg font-bold text-foreground">Önceliğimiz</h3>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               Müşteriye gereksiz masraf çıkarmadan en doğru donanımı seçmek, kör nokta bırakmayan sağlam bir kurulum teslim etmek.
             </p>
           </div>
 
-          <div className="p-6 sm:p-7 rounded-3xl border border-border bg-card shadow-apple flex flex-col gap-2.5">
+          <div className="p-5 sm:p-7 rounded-3xl border border-border bg-card shadow-apple flex flex-col gap-2.5">
             <div className="w-10 h-10 rounded-2xl bg-cyan-500/10 text-cyan-600 flex items-center justify-center mb-1">
               <Eye className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">Hedefimiz</h3>
+            <h3 className="text-base sm:text-lg font-bold text-foreground">Hedefimiz</h3>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               Araç kamera montajı ve sabit mekan güvenliğinde temiz işçiliği ve hızlı teknik desteği ile sektörde ilk akla gelen isim olmak.
             </p>
@@ -89,7 +89,7 @@ export function HakkimizdaContent() {
         </div>
 
         {/* Kurumsal Değerler */}
-        <div className="rounded-3xl bg-[#0B132B] text-white p-7 sm:p-10 shadow-apple-lg select-none">
+        <div className="rounded-3xl bg-[#0B132B] text-white p-5 sm:p-8 lg:p-10 shadow-apple-lg select-none">
           <div className="text-center max-w-xl mx-auto mb-8">
             <h2 className="text-xl sm:text-2xl font-bold mb-2">Çalışma Standartlarımız</h2>
             <p className="text-xs sm:text-sm text-slate-300">

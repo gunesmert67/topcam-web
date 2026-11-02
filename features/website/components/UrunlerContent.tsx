@@ -20,7 +20,7 @@ export function UrunlerContent() {
   })
 
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
@@ -36,15 +36,15 @@ export function UrunlerContent() {
         {/* Arama ve Kategori Filtreleme Çubuğu */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
           
-          {/* Kategori Butonları */}
-          <div className="flex flex-wrap items-center gap-2">
+          {/* Kategori Butonları (Mobil Kaydırılabilir) */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 w-full md:w-auto -mx-4 px-4 sm:mx-0 sm:px-0 flex-nowrap sm:flex-wrap">
             {productCategories.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setSelectedCategory(cat.id)}
                 className={cn(
-                  'px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200',
+                  'shrink-0 min-h-[38px] px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 active:scale-95',
                   selectedCategory === cat.id
                     ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
                     : 'bg-secondary text-foreground hover:bg-slate-200 border border-border'
@@ -57,13 +57,13 @@ export function UrunlerContent() {
 
           {/* Arama Inputu */}
           <div className="relative w-full md:w-64">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
             <input
               type="text"
               placeholder="Ürün ara..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full h-10 pl-9 pr-4 rounded-xl border border-input bg-card text-xs sm:text-sm outline-none focus-visible:border-primary focus-visible:ring-3 focus-visible:ring-primary/20"
+              className="w-full h-11 sm:h-10 pl-9 pr-4 rounded-xl border border-input bg-card text-base sm:text-sm outline-none focus-visible:border-primary focus-visible:ring-3 focus-visible:ring-primary/20"
             />
           </div>
 

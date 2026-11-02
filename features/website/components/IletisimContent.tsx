@@ -5,7 +5,7 @@ import { InstagramIcon } from '@/components/ui/icons'
 
 export function IletisimContent() {
   return (
-    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
+    <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
@@ -25,74 +25,74 @@ export function IletisimContent() {
           <div className="lg:col-span-5 flex flex-col gap-6">
             
             {/* Telefon Kartı */}
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-apple flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
-                <Phone className="w-6 h-6" />
+            <div className="rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
+                <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefon & Arama</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-[11px] sm:text-xs font-semibold text-muted-foreground uppercase tracking-wider">Telefon & Arama</span>
                 <a
                   href={`tel:${siteConfig.contact.phoneRaw}`}
-                  className="text-lg font-bold text-foreground hover:text-blue-600 transition-colors mt-0.5"
+                  className="text-base sm:text-lg font-bold text-foreground hover:text-blue-600 transition-colors mt-0.5"
                 >
                   {siteConfig.contact.phoneFormatted}
                 </a>
-                <span className="text-xs text-muted-foreground mt-1">Haftanın 7 günü doğrudan arayabilirsiniz</span>
+                <span className="text-xs text-muted-foreground mt-0.5">Haftanın 7 günü doğrudan arayabilirsiniz</span>
               </div>
             </div>
 
             {/* WhatsApp Kartı */}
-            <div className="rounded-3xl border border-emerald-200 bg-emerald-50/40 p-6 shadow-apple flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md">
-                <MessageCircle className="w-6 h-6" />
+            <div className="rounded-3xl border border-emerald-200 bg-emerald-50/40 p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md">
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold text-emerald-800 uppercase tracking-wider">WhatsApp Hızlı Destek</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-[11px] sm:text-xs font-semibold text-emerald-800 uppercase tracking-wider">WhatsApp Hızlı Destek</span>
                 <a
                   href={siteConfig.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg font-bold text-emerald-950 hover:underline mt-0.5"
+                  className="text-base sm:text-lg font-bold text-emerald-950 hover:underline mt-0.5 truncate"
                 >
                   Anında Mesaj Gönderin
                 </a>
-                <span className="text-xs text-emerald-700 mt-1">Fotoğraf veya video ileterek hızlı fiyat alın</span>
+                <span className="text-xs text-emerald-700 mt-0.5">Fotoğraf veya video ileterek hızlı fiyat alın</span>
               </div>
             </div>
 
             {/* E-posta Kartı */}
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-apple flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
-                <Mail className="w-6 h-6" />
+            <div className="rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center shrink-0">
+                <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">E-Posta Adresi</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-[11px] sm:text-xs font-semibold text-muted-foreground uppercase tracking-wider">E-Posta Adresi</span>
                 <a
                   href={`mailto:${siteConfig.contact.email}`}
-                  className="text-base font-bold text-foreground hover:text-blue-600 transition-colors mt-0.5 break-all"
+                  className="text-sm sm:text-base font-bold text-foreground hover:text-blue-600 transition-colors mt-0.5 break-all"
                 >
                   {siteConfig.contact.email}
                 </a>
-                <span className="text-xs text-muted-foreground mt-1">Resmi teklif ve kurumsal projeler için</span>
+                <span className="text-xs text-muted-foreground mt-0.5">Resmi teklif ve kurumsal projeler için</span>
               </div>
             </div>
 
             {/* Instagram Kartı */}
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-apple flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-pink-500/10 text-pink-600 flex items-center justify-center shrink-0">
-                <InstagramIcon className="w-6 h-6" />
+            <div className="rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-pink-500/10 text-pink-600 flex items-center justify-center shrink-0">
+                <InstagramIcon className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Instagram Takip</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-[11px] sm:text-xs font-semibold text-muted-foreground uppercase tracking-wider">Instagram Takip</span>
                 <a
                   href={siteConfig.contact.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-bold text-foreground hover:text-pink-600 transition-colors mt-0.5"
+                  className="text-sm sm:text-base font-bold text-foreground hover:text-pink-600 transition-colors mt-0.5 break-all"
                 >
                   {siteConfig.contact.instagramHandle}
                 </a>
-                <span className="text-xs text-muted-foreground mt-1">Uygulama videoları, montaj örnekleri ve hikayeler</span>
+                <span className="text-xs text-muted-foreground mt-0.5">Uygulama videoları, montaj örnekleri ve hikayeler</span>
               </div>
             </div>
 
