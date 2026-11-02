@@ -11,7 +11,8 @@
     "knip": "knip",
     "madge": "madge --circular --extensions ts,tsx ./",
     "architecture-check": "depcruise --config .dependency-cruiser.js app/ features/ components/ lib/ config/",
-    "test:security": "node --no-warnings scripts/security-audit.mjs",
+    "test:security": "node --no-warnings --experimental-strip-types scripts/security-audit.mjs",
+    "test": "npm run test:security",
     "verify": "npm run typecheck && npm run lint && npm run knip && npm run madge && npm run architecture-check && npm run test:security",
     "ci": "npm run verify && npm run build"
   },
