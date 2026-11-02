@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ShieldCheck, Phone, Video, Truck, Car, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { ShieldCheck, Phone, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { siteConfig } from '@/config/site'
+import { ROUTES } from '@/config/routes'
 
-export function HeroSection() {
+export function LandingHero() {
   return (
     <section className="relative overflow-hidden hero-pattern pt-8 pb-20 lg:pt-14 lg:pb-28 border-b border-white/10 select-none">
       {/* Arka plan ışık efektleri */}
@@ -129,9 +130,12 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Alt Floating Kart 1: Tır ve İş Makinesi */}
+              {/* Alt Floating Kartlar */}
               <div className="mt-4 grid grid-cols-2 gap-3.5">
-                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                <Link
+                  href={ROUTES.serviceTrucks}
+                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors"
+                >
                   <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-white/20">
                     <Image
                       src="/images/tir-arac-kamera.webp"
@@ -144,9 +148,12 @@ export function HeroSection() {
                     <h4 className="text-xs font-bold text-white">Tır & Kamyon</h4>
                     <p className="text-[10px] text-slate-300">Kör nokta & Mobil DVR</p>
                   </div>
-                </div>
+                </Link>
 
-                <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                <Link
+                  href={ROUTES.servicePassengerCars}
+                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors"
+                >
                   <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-white/20">
                     <Image
                       src="/images/on-arka-arac-kamera.webp"
@@ -159,7 +166,7 @@ export function HeroSection() {
                     <h4 className="text-xs font-bold text-white">Binek Araç</h4>
                     <p className="text-[10px] text-slate-300">Ön & Arka Yol Kayıt</p>
                   </div>
-                </div>
+                </Link>
               </div>
 
             </div>

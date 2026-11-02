@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { servicesData } from '@/data/services'
-import { siteConfig } from '@/config/site'
+import { servicesData } from '../data/services'
+import { ROUTES } from '@/config/routes'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export function ServicesSection() {
@@ -89,7 +89,7 @@ export function ServicesSection() {
         {/* Alt Bilgi & Tümünü Gör */}
         <div className="mt-12 text-center">
           <Link
-            href="/hizmetler"
+            href={ROUTES.services}
             className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-[#0B132B] hover:bg-slate-800 text-white font-bold text-sm shadow-lg transition-all hover:scale-105"
           >
             <span>Tüm Hizmet Detayları ve Uygulama Alanları</span>

@@ -4,17 +4,18 @@ import * as React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Phone, ShieldCheck, ChevronRight } from 'lucide-react'
+import { Menu, X, Phone, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
+import { ROUTES } from '@/config/routes'
 
 const navLinks = [
-  { name: 'Ana Sayfa', href: '/' },
-  { name: 'Hizmetlerimiz', href: '/hizmetler' },
-  { name: 'Ürün & Çözümler', href: '/urunler' },
-  { name: 'Hakkımızda', href: '/hakkimizda' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'İletişim', href: '/iletisim' },
+  { name: 'Ana Sayfa', href: ROUTES.home },
+  { name: 'Hizmetlerimiz', href: ROUTES.services },
+  { name: 'Ürün & Çözümler', href: ROUTES.products },
+  { name: 'Hakkımızda', href: ROUTES.about },
+  { name: 'Blog', href: ROUTES.blog },
+  { name: 'İletişim', href: ROUTES.contact },
 ]
 
 export function PublicNavbar() {
@@ -49,7 +50,7 @@ export function PublicNavbar() {
         <div className="flex h-16 items-center justify-between px-4 sm:px-6">
           {/* Logo & Marka */}
           <Link
-            href="/"
+            href={ROUTES.home}
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center gap-3 select-none group"
           >

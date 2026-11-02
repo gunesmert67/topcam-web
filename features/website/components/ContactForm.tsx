@@ -15,7 +15,7 @@ export function ContactForm() {
     email: '',
     serviceType: 'Güvenlik Kamera Sistemi Kurulumu',
     message: '',
-    website_hp: '', // Honeypot spam koruması
+    website_hp: '',
   })
 
   const [status, setStatus] = React.useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -83,7 +83,6 @@ export function ContactForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          {/* Honeypot gizli alan */}
           <input
             type="text"
             name="website_hp"

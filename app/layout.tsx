@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { IBM_Plex_Sans } from 'next/font/google'
-import { cn } from '@/lib/utils'
 import { ToastProvider, ToastViewport } from '@/components/ui/toast'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'

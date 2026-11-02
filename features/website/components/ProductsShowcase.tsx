@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { productsData } from '@/data/products'
-import { ArrowRight, Check } from 'lucide-react'
+import { productsData } from '../data/products'
+import { ROUTES } from '@/config/routes'
+import { ArrowRight } from 'lucide-react'
 
 export function ProductsShowcase() {
   const featured = productsData.slice(0, 4)
@@ -24,7 +25,7 @@ export function ProductsShowcase() {
           </div>
 
           <Link
-            href="/urunler"
+            href={ROUTES.products}
             className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors shrink-0"
           >
             <span>Tüm Ürünleri İncele</span>

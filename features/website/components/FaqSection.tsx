@@ -1,8 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import { faqData } from '@/data/faq'
-import { ChevronDown, HelpCircle } from 'lucide-react'
+import { faqData } from '../data/faq'
+import { ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function FaqSection() {

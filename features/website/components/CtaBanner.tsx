@@ -1,6 +1,6 @@
-import { Phone, MessageCircle, ArrowRight, ShieldCheck } from 'lucide-react'
+import { Phone, MessageCircle, ShieldCheck } from 'lucide-react'
 import { siteConfig } from '@/config/site'
-import { ContactForm } from '@/components/contact/ContactForm'
+import { ContactForm } from './ContactForm'
 
 export function CtaBanner() {
   return (

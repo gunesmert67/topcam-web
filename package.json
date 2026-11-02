@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "knip": "knip",
+    "madge": "madge --circular --extensions ts,tsx ./",
+    "architecture-check": "depcruise --config .dependency-cruiser.js app/ features/ components/ lib/ config/",
+    "verify": "npm run typecheck && npm run lint && npm run knip && npm run madge && npm run architecture-check",
+    "ci": "npm run verify && npm run build"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -28,8 +33,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dependency-cruiser": "^18.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "knip": "^6.27.0",
+    "madge": "^8.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Phone, MapPin, Shield, ArrowUpRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Shield } from 'lucide-react'
 import { InstagramIcon } from '@/components/ui/icons'
 import { siteConfig } from '@/config/site'
+import { ROUTES } from '@/config/routes'
 
 export function PublicFooter() {
   const currentYear = new Date().getFullYear()
@@ -14,7 +15,7 @@ export function PublicFooter() {
           
           {/* Kolon 1: Marka ve Açıklama */}
           <div className="flex flex-col gap-4">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href={ROUTES.home} className="flex items-center gap-3">
               <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/20">
                 <Image
                   src="/images/topcam-logo.webp"
@@ -61,33 +62,33 @@ export function PublicFooter() {
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">Kurumsal</h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href={ROUTES.home} className="hover:text-white transition-colors">
                   Ana Sayfa
                 </Link>
               </li>
               <li>
-                <Link href="/hakkimizda" className="hover:text-white transition-colors">
+                <Link href={ROUTES.about} className="hover:text-white transition-colors">
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler" className="hover:text-white transition-colors">
+                <Link href={ROUTES.services} className="hover:text-white transition-colors">
                   Hizmetlerimiz
                 </Link>
               </li>
               <li>
-                <Link href="/urunler" className="hover:text-white transition-colors">
+                <Link href={ROUTES.products} className="hover:text-white transition-colors">
                   Ürün & Çözümler
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-white transition-colors flex items-center gap-1.5">
+                <Link href={ROUTES.blog} className="hover:text-white transition-colors flex items-center gap-1.5">
                   <span>Blog & Güvenlik Rehberi</span>
                   <span className="text-[10px] bg-blue-500/20 text-blue-300 px-1.5 py-0.5 rounded-full font-medium">Yakında</span>
                 </Link>
               </li>
               <li>
-                <Link href="/iletisim" className="hover:text-white transition-colors">
+                <Link href={ROUTES.contact} className="hover:text-white transition-colors">
                   İletişim & Fiyatlandırma
                 </Link>
               </li>
@@ -99,32 +100,32 @@ export function PublicFooter() {
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">Çözümlerimiz</h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
-                <Link href="/hizmetler#guvenlik-kamera-sistemleri" className="hover:text-white transition-colors">
+                <Link href={ROUTES.serviceCameras} className="hover:text-white transition-colors">
                   IP & AHD Kamera Sistemleri
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler#tir-ve-agır-vasita-kamera-sistemleri" className="hover:text-white transition-colors">
+                <Link href={ROUTES.serviceTrucks} className="hover:text-white transition-colors">
                   Tır & Kamyon Mobil Kameraları
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler#is-makinesi-kamera-sistemleri" className="hover:text-white transition-colors">
+                <Link href={ROUTES.serviceMachinery} className="hover:text-white transition-colors">
                   İş Makinesi Kör Nokta Kameraları
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler#binek-arac-on-arka-kamera-montaji" className="hover:text-white transition-colors">
+                <Link href={ROUTES.servicePassengerCars} className="hover:text-white transition-colors">
                   Binek Araç Ön & Arka Kamera
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler#hirsiz-ve-yangin-alarm-sistemleri" className="hover:text-white transition-colors">
+                <Link href={ROUTES.serviceAlarms} className="hover:text-white transition-colors">
                   Kablosuz & Akıllı Alarm Setleri
                 </Link>
               </li>
               <li>
-                <Link href="/hizmetler#santral-ve-server-sistemleri" className="hover:text-white transition-colors">
+                <Link href={ROUTES.serviceServers} className="hover:text-white transition-colors">
                   Santral & Network Server Sistemleri
                 </Link>
               </li>
@@ -183,15 +184,15 @@ export function PublicFooter() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {currentYear} {siteConfig.name}. Tüm hakları saklıdır.</p>
           <div className="flex flex-wrap items-center gap-4">
-            <Link href="/kvkk" className="hover:text-slate-200 transition-colors">
+            <Link href={ROUTES.kvkk} className="hover:text-slate-200 transition-colors">
               KVKK Aydınlatma
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/gizlilik-politikasi" className="hover:text-slate-200 transition-colors">
+            <Link href={ROUTES.privacy} className="hover:text-slate-200 transition-colors">
               Gizlilik Politikası
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/cerez-politikasi" className="hover:text-slate-200 transition-colors">
+            <Link href={ROUTES.cookie} className="hover:text-slate-200 transition-colors">
               Çerez Politikası
             </Link>
           </div>
