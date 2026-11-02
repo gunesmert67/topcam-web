@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site'
 
 export function HakkimizdaContent() {
   return (
-    <div className="py-12 select-none">
+    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
@@ -46,22 +46,21 @@ export function HakkimizdaContent() {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative rounded-3xl overflow-hidden border border-border shadow-apple-lg aspect-[4/3] bg-slate-900">
+            <div className="relative rounded-3xl overflow-hidden border border-border shadow-apple-lg aspect-[4/3] bg-white p-6 sm:p-8 flex items-center justify-center">
               <Image
                 src="/images/guvenlik-kamera-sistemi.webp"
                 alt="Topçam Güvenlik Sistemleri Kurulum"
                 fill
-                className="object-cover"
+                className="object-contain p-4 transition-transform duration-300 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
-                  <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shrink-0">
-                    <ShieldCheck className="w-6 h-6" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="flex items-center gap-3 bg-[#0B132B]/90 backdrop-blur-md p-3.5 rounded-2xl border border-white/15 text-white shadow-xl">
+                  <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shrink-0">
+                    <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-white">Topçam Güvenlik Standartları</h3>
-                    <p className="text-xs text-slate-300">Sertifikalı IP68 donanım ve orijinal garantili bileşenler</p>
+                    <h3 className="text-xs font-bold text-white">Topçam Güvenlik Standartları</h3>
+                    <p className="text-[11px] text-slate-300">Sertifikalı IP68 donanım ve orijinal garantili bileşenler</p>
                   </div>
                 </div>
               </div>

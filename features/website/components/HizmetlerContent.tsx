@@ -5,7 +5,7 @@ import { CheckCircle2, ArrowRight, ShieldCheck, Phone, Wrench } from 'lucide-rea
 
 export function HizmetlerContent() {
   return (
-    <div className="py-12 select-none">
+    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Başlık Bölümü */}
@@ -35,15 +35,14 @@ export function HizmetlerContent() {
                   
                   {/* Görsel */}
                   <div className={`lg:col-span-5 ${isEven ? '' : 'lg:order-2'}`}>
-                    <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-slate-900 border border-border shadow-md">
+                    <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white border border-border p-6 flex items-center justify-center shadow-sm">
                       <Image
                         src={service.image}
                         alt={service.title}
                         fill
-                        className="object-cover"
+                        className="object-contain p-2 transition-transform duration-300 hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow">
+                      <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow-sm">
                         {service.badge}
                       </span>
                     </div>

@@ -16,13 +16,13 @@ export function PublicFooter() {
           {/* Kolon 1: Marka ve Açıklama */}
           <div className="flex flex-col gap-4">
             <Link href={ROUTES.home} className="flex items-center gap-3">
-              <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/20">
+              <div className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/20">
                 <Image
                   src="/images/topcam-logo.webp"
                   alt="Topçam Güvenlik Logo"
-                  width={40}
-                  height={40}
-                  className="h-10 w-10 object-cover"
+                  width={44}
+                  height={44}
+                  className="h-full w-full object-contain p-0.5"
                 />
               </div>
               <div className="flex flex-col">

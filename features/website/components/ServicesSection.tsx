@@ -29,16 +29,15 @@ export function ServicesSection() {
               key={service.id}
               className="group flex flex-col rounded-3xl border border-border bg-card overflow-hidden shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:-translate-y-1"
             >
-              {/* Görsel */}
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900">
+              {/* Görsel Vitrini - Tam Sığdırılmış, Sıfır Kırpılma */}
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-white border-b border-border p-6 flex items-center justify-center">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow-md">
+                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold shadow-sm">
                   {service.badge}
                 </span>
               </div>

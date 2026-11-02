@@ -155,7 +155,7 @@ export default function RootLayout({
         />
         <ToastProvider>
           <PublicNavbar />
-          <main className="flex-1 pt-20">
+          <main className="flex-1">
             {children}
           </main>
           <PublicFooter />

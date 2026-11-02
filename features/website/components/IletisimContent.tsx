@@ -5,7 +5,7 @@ import { InstagramIcon } from '@/components/ui/icons'
 
 export function IletisimContent() {
   return (
-    <div className="py-12 select-none">
+    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}

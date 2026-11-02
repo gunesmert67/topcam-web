@@ -6,7 +6,7 @@ import { ROUTES } from '@/config/routes'
 
 export function LandingHero() {
   return (
-    <section className="relative overflow-hidden hero-pattern pt-8 pb-20 lg:pt-14 lg:pb-28 border-b border-white/10 select-none">
+    <section className="relative overflow-hidden hero-pattern pt-24 pb-16 sm:pt-28 sm:pb-24 border-b border-white/10 select-none">
       {/* Arka plan ışık efektleri */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-600/15 blur-[120px] pointer-events-none rounded-full" />
       <div className="absolute top-1/2 right-10 w-[300px] h-[300px] bg-cyan-500/10 blur-[100px] pointer-events-none rounded-full" />
@@ -105,43 +105,45 @@ export function LandingHero() {
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Ana Görsel Kartı */}
-              <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-slate-900/90 shadow-2xl p-2.5">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+              {/* Ana Görsel Vitrin Kartı */}
+              <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-slate-900/90 shadow-2xl p-3 flex flex-col gap-3">
+                {/* Beyaz Stüdyo Vitrin Alanı - Resim asla kırpılmaz */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-white p-4 flex items-center justify-center">
                   <Image
                     src="/images/guvenlik-kamera-sistemi.webp"
                     alt="Topçam Güvenlik Kamera Sistemleri"
                     fill
-                    className="object-cover"
+                    className="object-contain p-2 drop-shadow-md transition-transform duration-300 hover:scale-105"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 text-left">
-                    <span className="inline-block px-2.5 py-0.5 rounded-full bg-blue-600 text-white text-[11px] font-bold mb-1">
-                      İş Yeri & Konut Çözümleri
-                    </span>
-                    <h3 className="text-white text-base font-bold leading-snug">
-                      IP & AHD Gece Görüşlü Kamera Sistemleri
-                    </h3>
-                    <p className="text-slate-300 text-xs">
-                      Telefon ve bilgisayarınızdan canlı izleme, geriye dönük sesli kayıt
-                    </p>
-                  </div>
+                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md">
+                    İş Yeri & Konut Çözümleri
+                  </span>
+                </div>
+
+                {/* Alt Açıklama Bandı - Görseli kapatmaz */}
+                <div className="p-2 text-left">
+                  <h3 className="text-white text-base font-bold leading-snug">
+                    IP & AHD Gece Görüşlü Kamera Sistemleri
+                  </h3>
+                  <p className="text-slate-300 text-xs mt-1">
+                    Telefon ve bilgisayarınızdan canlı izleme, geriye dönük sesli kayıt ve akıllı bildirimler
+                  </p>
                 </div>
               </div>
 
-              {/* Alt Floating Kartlar */}
+              {/* Alt Floating Kartlar - Tam Sığdırılmış Görseller */}
               <div className="mt-4 grid grid-cols-2 gap-3.5">
                 <Link
                   href={ROUTES.serviceTrucks}
-                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors"
+                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
                 >
-                  <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-white/20">
+                  <div className="relative w-14 h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/tir-arac-kamera.webp"
                       alt="Tır Kamera Sistemi"
                       fill
-                      className="object-cover"
+                      className="object-contain p-1 transition-transform duration-200 group-hover:scale-105"
                     />
                   </div>
                   <div className="text-left">
@@ -152,14 +154,14 @@ export function LandingHero() {
 
                 <Link
                   href={ROUTES.servicePassengerCars}
-                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors"
+                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-colors group"
                 >
-                  <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-white/20">
+                  <div className="relative w-14 h-14 rounded-xl bg-white p-1 shrink-0 border border-white/20 shadow-sm flex items-center justify-center overflow-hidden">
                     <Image
                       src="/images/on-arka-arac-kamera.webp"
                       alt="Binek Araç Yol Kayıt Kamerası"
                       fill
-                      className="object-cover"
+                      className="object-contain p-1 transition-transform duration-200 group-hover:scale-105"
                     />
                   </div>
                   <div className="text-left">

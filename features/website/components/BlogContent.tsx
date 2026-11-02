@@ -30,7 +30,7 @@ const upcomingArticles = [
 
 export function BlogContent() {
   return (
-    <div className="py-16 select-none">
+    <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık & Rozet */}
