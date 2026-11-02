@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ShieldCheck, Phone, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Phone, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { ROUTES } from '@/config/routes'
 
@@ -16,13 +16,6 @@ export function LandingHero() {
           
           {/* Sol Kolon: Metin & CTA */}
           <div className="lg:col-span-7 flex flex-col gap-6 text-center lg:text-left">
-            
-            {/* Rozet */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-semibold self-center lg:self-start">
-              <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span>Topçam Güvenlik • Yerinde Mobil Montaj</span>
-            </div>
-
             {/* Ana Başlık */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
               Mekanınız ve Araçlarınız İçin{' '}

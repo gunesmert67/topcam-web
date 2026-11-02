@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, ShieldCheck } from 'lucide-react'
+import { Phone, MessageCircle } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { ContactForm } from './ContactForm'
 
@@ -12,11 +12,6 @@ export function CtaBanner() {
           
           {/* Sol: Bilgi & Hızlı İletişim */}
           <div className="lg:col-span-6 flex flex-col gap-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-semibold self-center lg:self-start">
-              <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span>Hemen İletişime Geçin</span>
-            </div>
-
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
               Güvenliğinizi Ertelemeyin,{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300">

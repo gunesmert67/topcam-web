@@ -11,12 +11,9 @@ export function ProductsShowcase() {
     <section className="py-20 bg-secondary/40 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-14 gap-6">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
-              Donanım & Ekipman Vitrini
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight">
               Öne Çıkan Donanımlar
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground mt-2">

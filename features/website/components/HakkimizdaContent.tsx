@@ -8,12 +8,9 @@ export function HakkimizdaContent() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
             Hakkımızda
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-3 mb-3">
-            Topçam Güvenlik Sistemleri
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
             Kadir Topçam yönetiminde mekan ve araç güvenlik sistemlerinde yerinde montaj ve temiz işçilik sunuyoruz.

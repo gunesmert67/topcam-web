@@ -16,11 +16,8 @@ export function FaqSection() {
     <section className="py-20 bg-background select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
-            Aklınıza Takılanlar
-          </span>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3 mb-2">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-2">
             Sıkça Sorulan Sorular
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">

@@ -1,4 +1,4 @@
-import { BookOpen, Sparkles, Clock, MessageCircle } from 'lucide-react'
+import { BookOpen, Clock, MessageCircle } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 
 const upcomingArticles = [
@@ -33,17 +33,13 @@ export function BlogContent() {
     <div className="pt-28 pb-16 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         
-        {/* Üst Başlık & Rozet */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-600 text-xs font-bold mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Topçam Güvenlik Blog & Teknik Rehber</span>
-          </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-4">
-            Çok Yakında Sizlerle!
+        {/* Üst Başlık */}
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
+            Blog & Teknik Yazılar
           </h1>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Güvenlik kamerası teknolojileri, araç montaj ipuçları, kör nokta önleme ve alarm sistemleri hakkındaki teknik rehberlerimiz hazırlanıyor.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Güvenlik kamerası teknolojileri, araç montaj ipuçları ve teknik rehberlerimiz çok yakında burada olacak.
           </p>
         </div>
 

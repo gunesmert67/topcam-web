@@ -9,12 +9,9 @@ export function IletisimContent() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
-            Bize Ulaşın
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
-            İletişim & Ücretsiz Keşif Talebi
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
+            İletişim & Teklif Talebi
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
             Araç veya mekanınız için kamera ve alarm fiyatı almak için telefon, WhatsApp veya form üzerinden doğrudan ulaşabilirsiniz.

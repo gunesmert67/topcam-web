@@ -39,11 +39,8 @@ export function WhyUsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-3">
             Neden Topçam Güvenlik?
-          </span>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3 mb-3">
-            Doğru Donanım, Temiz İşçilik
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground">
             Bütçenize uygun ekipmanı seçiyor, kablo kirliliği yaratmadan profesyonelce kuruyoruz.

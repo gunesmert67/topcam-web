@@ -24,12 +24,9 @@ export function UrunlerContent() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Üst Başlık */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
-            Donanım & Ekipmanlar
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
-            Güvenlik Donanım ve Ürün Kataloğu
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
+            Ürünlerimiz
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
             Araç ve mekan güvenliğinde kullandığımız garantili kamera ve donanım ürünleri.

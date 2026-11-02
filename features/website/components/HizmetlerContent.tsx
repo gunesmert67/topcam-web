@@ -9,12 +9,9 @@ export function HizmetlerContent() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Başlık Bölümü */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
-            Uzmanlık Alanlarımız
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
-            Profesyonel Güvenlik ve Montaj Hizmetleri
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
+            Hizmetlerimiz
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
             İş yeri, ev, tır, iş makinesi ve binek araçlar için profesyonel kamera ve alarm montajı.
