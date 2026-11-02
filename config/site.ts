@@ -24,42 +24,42 @@ export const siteConfig = {
     {
       id: 'kamera-sistemleri',
       title: 'Güvenlik Kamera Sistemleri (IP / AHD / Analog)',
-      shortDesc: 'İş yeri, fabrika, depo, bina ve müstakil konutlar için gece görüşlü, yüksek çözünürlüklü IP, AHD ve Analog kamera kurulumu.',
+      shortDesc: 'İş yeri ve konutlar için gece renkli görüşlü IP ve AHD kamera kurulumu.',
       slug: 'guvenlik-kamera-sistemleri',
       image: '/images/guvenlik-kamera-sistemi.webp'
     },
     {
       id: 'arac-mobil-kamera',
       title: 'Tır, Kamyon ve Ağır Vasıta Kamera Sistemleri',
-      shortDesc: 'Tır, kamyon, otobüs ve lojistik filoları için kör nokta kameraları, mobil DVR kayıt cihazı ve ön-arka profesyonel kamera montajı.',
+      shortDesc: 'Lojistik araçları için kör nokta kameraları ve mobil DVR kayıt sistemi.',
       slug: 'tir-ve-agır-vasita-kamera-sistemleri',
       image: '/images/tir-arac-kamera.webp'
     },
     {
       id: 'is-makinesi-kamera',
       title: 'İş Makineleri Kör Nokta & Geri Görüş Sistemleri',
-      shortDesc: 'Ekskavatör, vinç, forklift, loder ve şantiye iş makinelerine özel titreşime ve toza dayanıklı 360° kör nokta ve arka görüş sistemleri.',
+      shortDesc: 'Ekskavatör, forklift ve vinçler için darbeye dayanıklı kör nokta ekranı.',
       slug: 'is-makinesi-kamera-sistemleri',
       image: '/images/is-makinesi-kamera.webp'
     },
     {
       id: 'binek-arac-kamera',
       title: 'Binek Araç Ön & Arka Kamera Montajı',
-      shortDesc: 'Otomobil ve hafif ticari araçlar için sonradan gizli kablo hatlı profesyonel ön ve arka yol kayıt kamerası montajı.',
+      shortDesc: 'Otomobiller için gizli kablolu ön-arka yol kayıt kamerası montajı.',
       slug: 'binek-arac-on-arka-kamera-montaji',
       image: '/images/on-arka-arac-kamera.webp'
     },
     {
       id: 'alarm-sistemleri',
       title: 'Hırsız & Yangın Alarm Sistemleri',
-      shortDesc: 'Kablosuz ve kablolu akıllı alarm setleri, hareket dedektörleri, sirenler ve cep telefonu bildirimli uzaktan yönetim çözümleri.',
+      shortDesc: 'Kablosuz akıllı alarm setleri ve cep telefonuna anında arama/bildirim.',
       slug: 'hirsiz-ve-yangin-alarm-sistemleri',
       image: '/images/alarm-sistemleri.webp'
     },
     {
       id: 'santral-server-sistemleri',
       title: 'Santral, Ağ Altyapısı ve Server Sistemleri',
-      shortDesc: 'IP ve analog telefon santralleri, rack kabinet, sunucu ve NVR kayıt server kurulumu, yapısal kablolama ve network altyapısı.',
+      shortDesc: 'IP telefon santrali, düzenli rack kabinet ve NVR kayıt sunucusu kurulumu.',
       slug: 'santral-ve-server-sistemleri',
       image: '/images/kamera-server.webp'
     }

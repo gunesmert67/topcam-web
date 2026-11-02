@@ -18,9 +18,9 @@ export function LandingHero() {
           <div className="lg:col-span-7 flex flex-col gap-6 text-center lg:text-left">
             
             {/* Rozet */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-semibold self-center lg:self-start">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-semibold self-center lg:self-start">
               <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span>Topçam Güvenlik Sistemleri | Yerinde Mobil Montaj Hizmeti</span>
+              <span>Topçam Güvenlik • Yerinde Mobil Montaj</span>
             </div>
 
             {/* Ana Başlık */}
@@ -32,8 +32,8 @@ export function LandingHero() {
             </h1>
 
             {/* Açıklama */}
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              İş yerinize ve evinize yüksek çözünürlüklü IP/AHD güvenlik kamerası ve alarm; tır, kamyon, iş makinesi ve binek aracınıza kör nokta önleyici ön-arka kamera ve santral altyapısı kuruyoruz.
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              İş yeri, ev, tır, iş makinesi ve binek araçlar için profesyonel kamera ve alarm montajı. Telefondan 7/24 canlı izleme, temiz ve gizli kablolama.
             </p>
 
             {/* Hızlı Avantaj Maddeleri */}

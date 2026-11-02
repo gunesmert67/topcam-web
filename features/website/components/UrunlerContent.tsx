@@ -31,8 +31,8 @@ export function UrunlerContent() {
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
             Güvenlik Donanım ve Ürün Kataloğu
           </h1>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Mekanlarınız ve araçlarınız için test edilmiş, dayanıklı ve yüksek performanslı güvenlik donanımlarımız.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Araç ve mekan güvenliğinde kullandığımız garantili kamera ve donanım ürünleri.
           </p>
         </div>
 

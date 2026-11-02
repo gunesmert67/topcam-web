@@ -20,11 +20,11 @@ export function FaqSection() {
           <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
             Aklınıza Takılanlar
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3 mb-2">
             Sıkça Sorulan Sorular
           </h2>
-          <p className="text-base text-muted-foreground">
-            Kamera montajı, araç garantisi, çalışma prensipleri ve keşif süreçleri hakkında merak edilenler.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Araç montajı, garanti durumu ve kamera sistemleri hakkında en sık sorulanlar.
           </p>
         </div>
 

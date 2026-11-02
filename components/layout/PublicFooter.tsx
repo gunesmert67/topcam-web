@@ -32,8 +32,8 @@ export function PublicFooter() {
                 </span>
               </div>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              İş yeriniz, konutunuz ve araçlarınız için yüksek teknolojili güvenlik kamera sistemleri, hırsız alarmları, mobil tır/kamyon/iş makinesi kameraları ve server ağ altyapısı çözümleri.
+            <p className="text-xs text-slate-400 leading-relaxed">
+              İş yeri, ev, tır, iş makinesi ve binek araçlar için kamera ve alarm sistemleri yerinde montaj hizmeti.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a

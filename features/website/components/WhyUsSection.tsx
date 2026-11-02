@@ -3,68 +3,68 @@ import { Wrench, Shield, Smartphone, Truck, Headphones, Award } from 'lucide-rea
 const features = [
   {
     icon: Wrench,
-    title: 'Kusursuz ve Gizli İşçilik',
-    desc: 'Kablo kirliliği ve dağınık hatlar olmadan; dekorasyona veya araç döşemesine zarar vermeyen estetik ve gizli kanal montajı.'
+    title: 'Kusursuz Gizli İşçilik',
+    desc: 'Kablo kirliliği olmadan; araç döşemesi ve mekan dekorasyonuna zarar vermeyen estetik montaj.'
   },
   {
     icon: Shield,
-    title: 'Garantiyi Bozmayan Araç Montajı',
-    desc: 'Orijinal elektrik tesisatını kesmeden, sigorta baypası (fuse-tap) ile aracınızın fabrika garantisini %100 koruyoruz.'
+    title: 'Garantiyi Bozmayan Montaj',
+    desc: 'Orijinal kabloları kesmeden sigorta baypası (fuse-tap) ile aracınızın fabrika garantisini koruyoruz.'
   },
   {
     icon: Smartphone,
-    title: 'Mobil Uygulama ile 7/24 İzleme',
-    desc: 'Dünyanın neresinde olursanız olun iOS ve Android telefonunuzdan canlı izleme, geçmiş kayıt tarama ve anlık hareket bildirimleri.'
+    title: 'Telefondan 7/24 Canlı İzleme',
+    desc: 'iOS ve Android uygulamasıyla dünyanın her yerinden anlık canlı görüntü ve kayıt tarama.'
   },
   {
     icon: Truck,
-    title: 'Ağır Vasıta & Şantiye Tecrübesi',
-    desc: 'Tırlar, kamyonlar, vinçler ve ekskavatörlerde yüksek voltaj, titreşim ve su geçirmezlik standartlarında profesyonel montaj.'
+    title: 'Ağır Vasıta & Şantiye Uzmanlığı',
+    desc: 'Tır, kamyon, vinç ve iş makinelerinde sarsıntıya ve zorlu yol şartlarına dayanıklı kurulum.'
   },
   {
     icon: Award,
-    title: '1. Sınıf Orijinal Ekipmanlar',
-    desc: 'Kör nokta bırakmayan geniş açılı lensler, Sony STARVIS gece görüş sensörleri ve endüstriyel kalitede dayanıklı donanımlar.'
+    title: '1. Sınıf Dayanıklı Ekipman',
+    desc: 'Sony gece görüş sensörleri, geniş açılı lensler ve IP68 metal zırhlı dış ortam kameraları.'
   },
   {
     icon: Headphones,
-    title: 'Hızlı Servis ve Doğrudan İletişim',
-    desc: 'Aracılar veya çağrı merkezi bekleme sıraları olmadan; Kadir Topçam ve uzman saha teknisyenlerimizle doğrudan iletişim imkanı.'
+    title: 'Hızlı Servis & Doğrudan İletişim',
+    desc: 'Kadir Topçam ile doğrudan iletişim; aynı gün keşif, net fiyat ve satış sonrası teknik destek.'
   }
 ]
 
 export function WhyUsSection() {
   return (
-    <section className="py-20 bg-background select-none">
+    <section className="py-16 sm:py-20 bg-background select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
           <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
             Neden Topçam Güvenlik?
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
-            Güvenliğinizi Şansa Bırakmayan Uzmanlık
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3 mb-3">
+            Doğru Donanım, Temiz İşçilik
           </h2>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Bizim için her montaj bir referanstır. En uygun bütçeyle en doğru donanımı seçiyor, titiz işçilikle teslim ediyoruz.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Bütçenize uygun ekipmanı seçiyor, kablo kirliliği yaratmadan profesyonelce kuruyoruz.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((item, index) => {
             const Icon = item.icon
             return (
               <div
                 key={index}
-                className="flex flex-col p-8 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:border-blue-200 group"
+                className="flex flex-col p-6 sm:p-7 rounded-3xl border border-border bg-card shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:border-blue-200 group"
               >
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <Icon className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <Icon className="w-5 h-5" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                   {item.desc}
                 </p>
               </div>

@@ -16,8 +16,8 @@ export function HizmetlerContent() {
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
             Profesyonel Güvenlik ve Montaj Hizmetleri
           </h1>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Mekanlarınız ve araçlarınız için her koşulda çalışan, yüksek teknolojili güvenlik sistemleri tasarlıyor, kuruyor ve periyodik bakımını yapıyoruz.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            İş yeri, ev, tır, iş makinesi ve binek araçlar için profesyonel kamera ve alarm montajı.
           </p>
         </div>
 

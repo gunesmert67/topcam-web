@@ -24,8 +24,8 @@ export function CtaBanner() {
               </span>
             </h2>
 
-            <p className="text-base text-slate-300 leading-relaxed">
-              İş yeriniz, eviniz veya filo araçlarınız için en uygun kamera ve güvenlik paketini birlikte belirleyelim. Uzman ekibimizle hızlı keşif ve temiz montaj için bize hemen ulaşın.
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Mekanınız veya aracınız için en uygun kamera sistemini belirleyelim. Yerinde mobil montaj ve net fiyat için bize hemen ulaşın.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">

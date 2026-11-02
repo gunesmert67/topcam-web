@@ -16,8 +16,8 @@ export function IletisimContent() {
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
             İletişim & Ücretsiz Keşif Talebi
           </h1>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Mekanınız veya aracınız için güvenlik kamerası, alarm ya da mobil sistem teklifi almak için bize telefon, e-posta veya form üzerinden 7/24 ulaşabilirsiniz.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Araç veya mekanınız için kamera ve alarm fiyatı almak için telefon, WhatsApp veya form üzerinden doğrudan ulaşabilirsiniz.
           </p>
         </div>
 

@@ -16,11 +16,11 @@ export function ProductsShowcase() {
             <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
               Donanım & Ekipman Vitrini
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-4">
-              Yüksek Teknolojili Güvenlik Ekipmanları
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3">
+              Öne Çıkan Donanımlar
             </h2>
-            <p className="text-base text-muted-foreground mt-3">
-              Kullandığımız tüm ürünler zorlu çevre şartlarına karşı test edilmiş, orijinal ve garantili cihazlardır.
+            <p className="text-sm sm:text-base text-muted-foreground mt-2">
+              Saha şartlarına dayanıklı, orijinal ve garantili güvenlik donanımları.
             </p>
           </div>
 

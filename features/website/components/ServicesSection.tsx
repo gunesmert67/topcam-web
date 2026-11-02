@@ -14,11 +14,11 @@ export function ServicesSection() {
           <span className="text-xs font-bold tracking-wider uppercase text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
             Hizmet Alanlarımız
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-4 mb-4">
-            Mekanınız ve Araçlarınız İçin Profesyonel Çözümler
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mt-3 mb-3">
+            Uzmanlık Alanlarımız
           </h2>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            İş yeri güvenlik kameralarından tır ve iş makinelerine, binek araç yol kayıt kameralarından santral ve server ağlarına kadar uçtan uca profesyonel kurulum.
+          <p className="text-sm sm:text-base text-muted-foreground">
+            İş yeri, ev, tır, iş makinesi ve binek araçlar için anahtar teslim kamera ve alarm kurulumu.
           </p>
         </div>
 

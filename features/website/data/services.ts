@@ -19,29 +19,28 @@ export const servicesData: ServiceItem[] = [
     title: 'IP, AHD ve Analog Güvenlik Kamera Sistemleri',
     shortTitle: 'Güvenlik Kamera Sistemleri',
     badge: 'En Çok Tercih Edilen',
-    summary: 'İş yerleri, fabrikalar, depolar, apartmanlar ve konutlar için gece görüşlü, yapay zeka analizli IP ve AHD kamera kurulumu.',
-    description: 'Topçam Güvenlik Sistemleri olarak; yüksek çözünürlüklü (2MP, 4MP, 8MP 4K Ultra HD) IP kameralar, ekonomik ve dayanıklı AHD sistemler ve analog altyapılar ile mekanlarınızı 7/24 kesintisiz koruma altına alıyoruz. Telefon, tablet ve bilgisayardan anlık canlı izleme, geriye dönük sesli ve görüntülü kayıt tarama, hareket algılama ve akıllı bildirim özellikleri ile kontrol her an elinizin altında.',
+    summary: 'İş yeri, ev ve binalar için gece renkli görüşlü, telefondan 7/24 canlı izlemeli kamera montajı.',
+    description: '2MP ile 4K arası IP ve AHD güvenlik kameraları kuruyoruz. Telefondan anlık canlı izleme, geriye dönük sesli/görüntülü kayıt ve temiz kablolama ile mekanınızı koruma altına alın.',
     image: '/images/guvenlik-kamera-sistemi.webp',
     features: [
-      '4K Ultra HD ve Full HD Gece Görüş Teknolojisi',
-      'H.265+ Akıllı Video Sıkıştırma ile Uzun Süreli Kayıt',
-      'Mobil Uygulama Üzerinden Kesintisiz 7/24 Canlı İzleme',
-      'Hareket, Yüz ve Çevre Güvenlik Çit İhlali Bildirimleri',
-      'Hava Koşullarına ve Dış Ortama Dayanıklı IP67 Muhafaza',
-      'Profesyonel Kanal ve Kablolama ile Temiz İşçilik'
+      'Telefondan 7/24 Canlı İzleme & Bildirim',
+      'Gece Renkli Görüş (ColorVu / Smart IR)',
+      '4K Ultra HD & Full HD Net Görüntü',
+      'H.265+ ile Aylarca Geriye Dönük Kayıt',
+      'Kanal İçi Gizli Kablolama & Temiz İşçilik'
     ],
     applicationAreas: [
-      'Fabrika, Atölye ve İmalathaneler',
-      'Depolar, Lojistik Merkezleri ve Antrepolar',
-      'Mağazalar, Ofisler ve Plaza Katları',
-      'Apartman, Site ve Müstakil Villalar',
-      'Otoparklar, Benzin İstasyonları ve Açık Alanlar'
+      'Fabrika & Atölyeler',
+      'Depo & Antrepolar',
+      'Dükkan, Mağaza & Ofisler',
+      'Apartman & Siteler',
+      'Otopark & Açık Alanlar'
     ],
     specs: [
-      { label: 'Çözünürlük Seçenekleri', value: '1080p FHD, 4MP, 5MP, 8MP (4K)' },
-      { label: 'Gece Görüşü', value: 'Smart IR LED, ColorVu / Full Color 30-80m' },
-      { label: 'Kayıt Desteği', value: 'NVR / DVR / Cloud Yedekleme' },
-      { label: 'Uzaktan Erişim', value: 'iOS, Android, Windows, macOS' },
+      { label: 'Çözünürlük', value: '1080p FHD, 4MP, 8MP (4K)' },
+      { label: 'Gece Görüş', value: 'Smart IR LED & Renkli 30-80m' },
+      { label: 'Kayıt', value: 'NVR / DVR Sabit Disk Depolama' },
+      { label: 'Erişim', value: 'iOS, Android, Bilgisayar' },
     ]
   },
   {
@@ -49,30 +48,29 @@ export const servicesData: ServiceItem[] = [
     slug: 'tir-ve-agır-vasita-kamera-sistemleri',
     title: 'Tır, Kamyon ve Ağır Vasıta Mobil Kamera Sistemleri',
     shortTitle: 'Tır & Ağır Vasıta Kameraları',
-    badge: 'Mobil Güvenlik Uzmanlığı',
-    summary: 'Lojistik tırları, kamyonlar, mikserler ve otobüsler için kör nokta önleme, mobil DVR kayıt ve filo güvenlik sistemleri.',
-    description: 'Ağır vasıtalarda meydana gelen kazaların %70’ten fazlası kör nokta kaynaklıdır. Topçam Güvenlik Sistemleri olarak; tır çekicileri, dorseler, hafriyat kamyonları ve otobüslere özel sarsıntıya, yüksek voltaj dalgalanmalarına ve zorlu yol şartlarına dayanıklı Mobil DVR ve kör nokta kamera sistemleri uyguluyoruz. Sürücü kabinindeki yüksek çözünürlüklü monitör sayesinde kör noktalar sıfıra iner, kaza riski minimuma iner.',
+    badge: 'Kör Nokta Önleme',
+    summary: 'Lojistik tırları ve kamyonlar için kör nokta önleyici kabin monitörü ve sarsıntıya dayanıklı mobil DVR kayıt.',
+    description: 'Ağır vasıtalarda kazaların çoğu kör noktalardan kaynaklanır. Kabin içi HD monitör, sağ-sol sinyal tetiklemeli yan kameralar ve su geçirmez dorse kameraları ile tam hakimiyet sağlayın.',
     image: '/images/tir-arac-kamera.webp',
     features: [
-      'AHD Gece Görüşlü Geniş Açılı (140°-170°) Ağır Vasıta Kameraları',
-      'Sarsıntıya ve Titreşime Karşı Kilitli Mobil DVR Kayıt Cihazları',
-      'Şoför Kabini İçin 7” veya 9” Bölünmüş Ekranlı HD Monitör',
-      'Geri Vitese Takıldığında Otomatik Tetiklenen Arka Kamera Görüntüsü',
-      'Sağ-Sol Sinyal Entegreli Kör Nokta Otomatik Yan Görünüm',
-      'Dorse Bağlantısı İçin Özel Ağır Hizmet Tipi Spiral Kablo Soketleri'
+      'Kabin İçi 7" / 9" Çoklu Bölünmüş HD Monitör',
+      'Sağ-Sol Sinyale ve Geri Vitese Duyarlı Otomatik Görüntü',
+      'Sarsıntıya Karşı Kilitli Mobil DVR Kayıt Cihazı',
+      'Dorse İçin Ağır Hizmet Tipi Yaylı Spiral Soket',
+      '12V / 24V / 36V Endüstriyel Voltaj Koruması'
     ],
     applicationAreas: [
-      'Uluslararası ve Şehirlerarası Lojistik Tırları',
-      'Hafriyat ve Damperli Kamyonlar',
-      'Beton Mikserleri ve Pompa Araçları',
-      'Belediye Çöp Kamyonları ve Yol Süpürme Araçları',
-      'Şehirlerarası Otobüsler ve Personel Servisleri'
+      'Uluslararası & Yurtiçi Lojistik Tırları',
+      'Hafriyat & Damperli Kamyonlar',
+      'Beton Mikserleri',
+      'Belediye & Çöp Araçları',
+      'Otobüs & Personel Servisleri'
     ],
     specs: [
-      { label: 'Voltaj Uyumluluğu', value: '12V - 24V - 36V Endüstriyel Güç Koruması' },
-      { label: 'Su ve Toz Koruması', value: 'IP68 / IP69K Yüksek Basınçlı Suya Dayanıklı' },
-      { label: 'Kayıt Kapasitesi', value: 'SD Kart ve SSD/HDD Mobil DVR Desteği' },
-      { label: 'Kamera Sayısı', value: '2 Kameralı, 4 Kameralı ve 8 Kameralı Paketler' },
+      { label: 'Voltaj', value: '12V - 24V - 36V Uyumlu' },
+      { label: 'Koruma', value: 'IP68 / IP69K Basınçlı Suya Dayanıklı' },
+      { label: 'Kayıt', value: 'SD Kart & SSD Mobil DVR' },
+      { label: 'Paket', value: '2, 4 veya 8 Kameralı Setler' },
     ]
   },
   {
@@ -80,60 +78,58 @@ export const servicesData: ServiceItem[] = [
     slug: 'is-makinesi-kamera-sistemleri',
     title: 'İş Makineleri Kör Nokta ve Geri Görüş Sistemleri',
     shortTitle: 'İş Makinesi Kamera Montajı',
-    badge: 'İş Güvenliği & İSG Uyumlu',
-    summary: 'Ekskavatör, vinç, forklift, loder ve kazıcı-yükleyiciler için şantiye şartlarına uygun 360° kör nokta kameraları.',
-    description: 'Şantiyelerde, maden ocaklarında ve endüstriyel tesislerde iş makinelerinin çevresindeki personeli ve engelleri fark edebilmesi hayati önem taşır. Topçam Güvenlik; forkliftlerden devasa kule vinçlere ve paletli ekskavatörlere kadar her makine tipine özel, darbelere ve basınca dayanıklı kamera ve monitör montajı gerçekleştirir. İSG standartlarına tam uyumlu çözümlerimiz iş kazalarının önüne geçer.',
+    badge: 'İSG & Şantiye Uyumlu',
+    summary: 'Ekskavatör, vinç, forklift ve loderler için darbelere dayanıklı 360° kör nokta ve operatör ekranı.',
+    description: 'Şantiye ve maden sahalarında kaza riskini sıfıra indirin. Darbeye, basınca ve toza dayanıklı metal zırhlı kameralar ve kabin içi parlamayan monitör montajı yapıyoruz.',
     image: '/images/is-makinesi-kamera.webp',
     features: [
-      'Şok, Darbe ve Yoğun Toza Karşı Metal Zırhlı Gövde',
-      'Yüksek Işıkta Yansıma Yapmayan Endüstriyel IPS Monitör',
-      'Forklift Çatal Ucu ve Yükseklik Kamerası Opsiyonu',
-      'Kule Vinç Halat ve Bom Ucu Zoom Kameraları',
-      'Yaya ve Engel Algılayıcı Yakınlık Sensör & Sesli İkaz Entegrasyonu',
-      'Yerinde Şantiye Alanında Profesyonel Mobil Montaj Hizmeti'
+      'Metal Zırhlı Şok ve Toz Korumalı Gövde',
+      'Güneşte Parlamayan Endüstriyel Operatör Monitörü',
+      'Forklift Çatal Ucu & Vinç Bom Kamerası Seçenekleri',
+      'Geri Manevra ve Kör Nokta Sesli İkaz Entegrasyonu',
+      'Yerinde Şantiyede Mobil Montaj Hizmeti'
     ],
     applicationAreas: [
       'Paletli & Lastikli Ekskavatörler',
-      'Forkliftler ve Reach Truck Depo Araçları',
-      'Loder (Yükleyici) ve Beko Loderler',
-      'Mobil Vinçler ve Kule Vinçler',
-      'Maden Kamyonları, Dozerler ve Silindirler'
+      'Forklift & Depo Reach Truck Araçları',
+      'Loder & Beko Loderler',
+      'Kule Vinç & Mobil Vinçler',
+      'Maden Kamyonları & Dozerler'
     ],
     specs: [
-      { label: 'Kasa Tipi', value: 'Döküm Alüminyum & Ağır Hizmet Zırhlı' },
-      { label: 'Titreşim Mukavemeti', value: '10G Titreşim ve Darbe Direnci' },
-      { label: 'Gece Aydınlatması', value: 'IR LED + Otomatik Işık Dengeleme (WDR)' },
-      { label: 'Montaj Şekli', value: 'Güçlü Mıknatıslı veya Civatalı Şantiye Montajı' },
+      { label: 'Gövde', value: 'Döküm Alüminyum & Zırhlı Çelik' },
+      { label: 'Titreşim', value: '10G Şok ve Titreşim Direnci' },
+      { label: 'Görüş', value: 'Gece IR LED + Geniş Açı' },
+      { label: 'Montaj', value: 'Şantiye Alanında Yerinde Montaj' },
     ]
   },
   {
     id: 'binek-arac-kamera',
     slug: 'binek-arac-on-arka-kamera-montaji',
-    title: 'Binek ve Ticari Araç Ön & Arka Yol Kayıt Kamerası Montajı',
+    title: 'Binek ve Ticari Araç Ön & Arka Yol Kayıt Kamerası',
     shortTitle: 'Binek Araç Yol Kayıt Kameraları',
-    badge: 'Kusursuz Gizli Kablolama',
-    summary: 'Otomobil ve hafif ticari araçlar için sonradan ön ve arka yol kayıt kamerası montajı, park modu ve sigorta beslemesi.',
-    description: 'Trafikte karşılaştığınız olası anlaşmazlıklarda, kaza tutanaklarında ve park halinde aracınıza verilen hasarlarda en güçlü kanıtınız yol kayıt kameranızdır. Topçam Güvenlik Sistemleri olarak; kabloları aracın döşeme ve fitil altından tamamen gizleyerek, orijinal sigorta kutusundan güvenli bypass (fuse tap) ile 24 saat park nöbeti kaydı yapabilen sistemleri kusursuz işçilikle kuruyoruz.',
+    badge: 'Garantiyi Bozmaz',
+    summary: 'Otomobil ve hafif ticariler için gizli kablolu ön-arka yol kayıt kamerası montajı ve 24 saat park nöbeti.',
+    description: 'Olası kaza ve anlaşmazlıklarda en sağlam deliliniz araç kamerasıdır. Orijinal kablo demetlerini kesmeden, sigorta baypası ile garantiyi koruyarak gizli kablolama yapıyoruz.',
     image: '/images/on-arka-arac-kamera.webp',
     features: [
-      'Ön ve Arka Eşzamanlı 2K / 4K Çift Yönlü Kayıt',
-      'Görünmeyen Gizli Kablolama İşçiliği (Orijinalliği Bozmaz)',
-      'Akü Koruma Devreli 24 Saat Kesintisiz Park Nöbeti Modu',
-      'G-Sensör (Darbe Algılayıcı) ile Otomatik Acil Durum Kilitli Kaydı',
-      'Dahili Wi-Fi ile Cep Telefonundan Hızlı Video İndirme ve İzleme',
-      'GPS Modülü ile Hız, Konum ve Rota Kaydı'
+      'Ön & Arka Eşzamanlı 2K / 4K Ultra Net Kayıt',
+      'Fitil Altından Tamamen Gizli Kablolama (Sıfır Kablo Kirliliği)',
+      'Orijinal Garantiyi Bozmayan Sigorta Baypası (Fuse-Tap)',
+      'Akü Koruma Devreli 24 Saat Kesintisiz Park Kaydı',
+      'Wi-Fi ile Telefondan Anında Video İndirme ve İzleme'
     ],
     applicationAreas: [
-      'Binek Otomobiller (Sedan, Hatchback, SUV)',
+      'Binek Araçlar (Sedan, Hatchback, SUV)',
       'Hafif Ticari Araçlar (Doblo, Caddy, Transporter vb.)',
-      'Taksi, VIP Transfer ve Filo Kiralama Araçları',
-      'Sürücü Kursu Eğitim Araçları'
+      'Taksi & VIP Transfer Araçları',
+      'Filo & Şirket Araçları'
     ],
     specs: [
-      { label: 'Lens Açısı', value: '160° Ultra Geniş Ön / 140° Arka Açı' },
-      { label: 'Görüntü Sensörü', value: 'Sony STARVIS Gece Sensörü' },
-      { label: 'Besleme Bağlantısı', value: 'Sigorta Kutusu Park Kablosu (Hardwire Kit)' },
-      { label: 'Depolama', value: 'Yüksek Hızlı MicroSD (64GB - 256GB - 512GB)' },
+      { label: 'Görüş Açısı', value: '160° Ön / 140° Arka Açı' },
+      { label: 'Sensör', value: 'Sony STARVIS Gece Sensörü' },
+      { label: 'Bağlantı', value: 'Sigorta Kutusu Park Kiti' },
+      { label: 'Hafıza', value: '64GB - 256GB MicroSD Desteği' },
     ]
   },
   {
@@ -141,29 +137,28 @@ export const servicesData: ServiceItem[] = [
     slug: 'hirsiz-ve-yangin-alarm-sistemleri',
     title: 'Hırsız ve Yangın Alarm Sistemleri',
     shortTitle: 'Alarm Sistemleri',
-    badge: 'Tam Kapsamlı Koruma',
-    summary: 'Kablosuz akıllı ev & iş yeri alarm setleri, kapı/pencere manyetik kontakları, hareket sensörleri ve telefon aramalı paneller.',
-    description: 'Yetkisiz girişlere, hırsızlık teşebbüslerine ve yangın/gaz kaçaklarına karşı mekanınızı saniyeler içinde koruma altına alan akıllı alarm sistemleri kuruyoruz. Sabotaj korumalı harici sirenler, kablosuz şık sensörler ve telefonunuza anında gelen siren ve arama bildirimleri ile mekanınız güvende kalır.',
+    badge: 'Kablosuz & Akıllı',
+    summary: 'Ev ve iş yerleri için kapı/pencere manyetik kontakları, hareket sensörleri ve telefona anında arama.',
+    description: 'Yetkisiz giriş ve hırsızlığa karşı saniyeler içinde devreye giren akıllı alarm setleri. Kırma dökme yapmadan kablosuz montaj, elektrik kesintisinde çalışan dahili akü ve anında telefon bildirimi.',
     image: '/images/alarm-sistemleri.webp',
     features: [
-      'Kablosuz Kolay Kurulum ve Kırma/Dökme Yapmadan Montaj',
-      'Evcil Hayvan Algılamayan (Pet-Immune) Akıllı PIR Dedektörler',
-      'Elektrik Kesintisine Karşı Dahili Akü ile Kesintisiz Çalışma',
-      'GSM ve Wi-Fi Çift Hatlı Kesintisiz İletişim',
-      'Harici 120dB Caydırıcı Işıklı ve Sabotaj Korumalı Siren',
-      'Duman, Gaz Kaçağı ve Su Baskını Dedektör Entegrasyonu'
+      'Kablosuz Kolay Kurulum (Kırma Dökme Yok)',
+      'Evcil Hayvan Algılamayan Akıllı PIR Dedektörler',
+      'Elektrik Kesilse Bile Akü ile Kesintisiz Koruma',
+      'Telefona Anında Çağrı & SMS Bildirimi',
+      '120dB Yüksek Sesli Caydırıcı Dış Ortam Sireni'
     ],
     applicationAreas: [
-      'Evler, Villalar ve Yazlık Konutlar',
-      'Kuyumcular, Eczaneler ve Değerli Eşya Mağazaları',
-      'Ofisler, Şirket Merkezleri ve Depolar',
-      'Fabrika İdari Binaları ve Şantiyeler'
+      'Ev, Villa & Yazlıklar',
+      'Dükkan, Mağaza & Kuyumcular',
+      'Ofis & Şirket Merkezleri',
+      'Depo & Şantiyeler'
     ],
     specs: [
-      { label: 'Haberleşme', value: 'GSM / 4G LTE + Wi-Fi + Sabit Hat' },
-      { label: 'Yedek Güç', value: '12V Bakımsız Kuru Akü (24-48 Saat Çalışma)' },
-      { label: 'Mesafe', value: 'Kablosuz Sensörlerde 1.200 Metreye Kadar Açık Alan' },
-      { label: 'Yönetim', value: 'Mobil Uygulama + Şifre Paneli + Uzaktan Kumanda' },
+      { label: 'Bağlantı', value: 'GSM / 4G + Wi-Fi Çift Hat' },
+      { label: 'Yedek Güç', value: '24-48 Saat Akü Koruması' },
+      { label: 'Menzil', value: 'Kablosuz 1.200m Açık Alan' },
+      { label: 'Yönetim', value: 'Mobil Uygulama + Kumanda + Tuş Takımı' },
     ]
   },
   {
@@ -171,29 +166,28 @@ export const servicesData: ServiceItem[] = [
     slug: 'santral-ve-server-sistemleri',
     title: 'Santral, Rack Kabinet ve Kamera Server Sistemleri',
     shortTitle: 'Santral & Server Altyapısı',
-    badge: 'Kurumsal Altyapı',
-    summary: 'IP/Analog telefon santralleri, rack kabinet düzenleme, NVR server ve yapısal data kablolama çözümleri.',
-    description: 'Güvenlik kamera ve iletişim sistemlerinin kalbi olan network ve server altyapısını profesyonel standartlarda inşa ediyoruz. Düzensiz kablo karmaşasına son veren patch panel ve rack kabinet sonlandırmaları, kurumsal IP telefon santralleri ve yüksek kapasiteli NVR video kayıt sunucuları ile işletmenizin teknolojik omurgasını güçlendiriyoruz.',
+    badge: 'Düzenli Altyapı',
+    summary: 'İşletmeler için IP telefon santrali, düzenli rack kabinet montajı ve yüksek kapasiteli NVR video sunucusu.',
+    description: 'Kablo karmaşasına son veriyoruz. Etiketli patch panel sonlandırmaları, kurumsal IP santraller ve RAID destekli yüksek kapasiteli kayıt sunucuları kuruyoruz.',
     image: '/images/kamera-server.webp',
     features: [
-      'IP ve Hibrit Telefon Santrali Kurulumu ve Dahili Hat Programlama',
-      'Rack Kabinet Montajı, Patch Panel ve Etiketli Kablo Düzenleme',
-      'Yüksek Kapasiteli NVR / Server Depolama Üniteleri Kurulumu',
-      'PoE Switch ve Fiber Optik Ağ Altyapısı Sonlandırması',
-      'Uzaktan Erişim İçin Güvenli Port ve Statik IP / VPN Yapılandırması',
-      'Kesintisiz Güç Kaynağı (UPS) Entegrasyonu ile Veri Kaybını Önleme'
+      'IP & Hibrit Telefon Santrali Kurulumu',
+      'Rack Kabinet & Etiketli Düzenli Patch Panel',
+      'Yüksek Kapasiteli NVR Video Sunucusu',
+      'PoE Switch & Yapısal Network Kablolama',
+      'UPS Kesintisiz Güç Kaynağı Entegrasyonu'
     ],
     applicationAreas: [
-      'Kamera Kontrol Odaları ve Güvenlik Merkezleri',
-      'Plazalar, Kurumsal Ofisler ve Çağrı Merkezleri',
-      'Hastaneler, Oteller ve Eğitim Kurumları',
-      'Lojistik Tesisler ve Organize Sanayi Bölgeleri'
+      'Kamera Kontrol & Güvenlik Odaları',
+      'Kurumsal Ofisler & Plazalar',
+      'Hastaneler, Oteller & Tesisler',
+      'Sanayi Tesisleri & Fabrikalar'
     ],
     specs: [
-      { label: 'Kablo Standardı', value: 'Cat6, Cat6A, Cat7 ve Fiber Optik' },
-      { label: 'Kabinet Boyutları', value: '6U, 9U, 12U Duvar Tipi / 19” 22U-42U Dikili Tip' },
-      { label: 'Santral Kapasitesi', value: '4 Hattan 500+ Dahili Aboneye Kadar Ölçeklenebilir' },
-      { label: 'Kayıt Sunucusu', value: 'RAID Destekli 16-128 Kanal Kurumsal NVR Sistemleri' },
+      { label: 'Kablo', value: 'Cat6, Cat6A ve Fiber Optik' },
+      { label: 'Kabinet', value: '6U-12U Duvar / 22U-42U Dikili' },
+      { label: 'Santral', value: '4 Hattan 200+ Aboneye Kadar' },
+      { label: 'Kayıt', value: '16-128 Kanal Kurumsal NVR' },
     ]
   }
 ]

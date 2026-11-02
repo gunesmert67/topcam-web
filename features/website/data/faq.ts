@@ -5,27 +5,31 @@ export interface FaqItem {
 
 export const faqData: FaqItem[] = [
   {
-    question: 'Binek araca sonradan takılan ön ve arka kamera aracın garantisini bozar mı?',
-    answer: 'Hayır, kesinlikle bozmaz. Montaj işlemlerimizde orijinal kablo demetleri kesilmez veya soyulmaz. Aracın sigorta kutusundan sigorta baypası (fuse-tap) aparatı kullanılarak, bağımsız bir hat üzerinden güvenli elektrik bağlantısı yapılır. Bu sayede aracınızın garantisi ve orijinalliği %100 korunur.'
+    question: 'Araç kamerası taktırmak aracımın garantisini bozar mı?',
+    answer: 'Hayır, kesinlikle bozmaz. Montaj sırasında orijinal kablolar kesilmez veya soyulmaz; sigorta baypası (fuse-tap) ile bağımsız emniyetli bağlantı yapılır. Aracınızın fabrika garantisi %100 korunur.'
   },
   {
-    question: 'Tır ve kamyon kameraları zorlu hava ve yıkama koşullarına dayanıklı mı?',
-    answer: 'Evet. Ağır vasıtalar, tırlar ve iş makineleri için kullandığımız kameralar IP68 ve IP69K endüstriyel su ve toz geçirmezlik sertifikalarına sahiptir. Yüksek basınçlı sıcak su jetiyle araç yıkamalarında, yoğun yağmur, kar, çamur ve aşırı sıcak havalarda sorunsuz çalışır.'
+    question: 'Kamera kabloları aracın içinde dağınık durur mu?',
+    answer: 'Hayır. Tüm kablolar tavan döşemesi, kapı fitilleri ve plastik trimlerin altına gizlenir. Dışarıda hiçbir kablo görünmez, orijinal fabrika görünümü korunur.'
   },
   {
-    question: 'Güvenlik kamera sistemini internet olmadan da kullanabilir miyim?',
-    answer: 'Evet. Kamera ve kayıt cihazınız mekanınızda internet bağlantısı olmasa dahi kesintisiz kayıt yapmaya devam eder ve görüntüleri kendi dahili diskinde saklar. Monitörden canlı ve geçmiş kayıtları izleyebilirsiniz. İnternet bağlantısı ise yalnızca telefon veya bilgisayarınızdan uzaktan canlı izleme yapabilmeniz için gereklidir.'
+    question: 'Tır ve iş makinesi kameraları tazyikli suya ve toza dayanıklı mı?',
+    answer: 'Evet. Kameralarımız IP68 ve IP69K endüstriyel su ve toz geçirmezlik standardına sahiptir. Yüksek basınçlı sıcak su jetiyle yıkamada, çamurda ve aşırı şantiye tozunda sorunsuz çalışır.'
+  },
+  {
+    question: 'İnternet bağlantısı olmadan da kameralar kayıt yapar mı?',
+    answer: 'Evet. Kamera sistemi internet olmasa da kesintisiz kayıt yapmaya devam eder. İnternet sadece telefonunuzdan uzaktan canlı izlemek istediğinizde gereklidir.'
   },
   {
     question: 'Araç kamerası araç stop ettiğinde park halinde de kayıt yapar mı?',
-    answer: 'Evet. Kullandığımız akıllı park kiti (Hardwire Kit) sayesinde araç kontağı kapandığında kamera otomatik olarak Park Moduna geçer. Harekete ve darbeye duyarlı olarak kayıt yapmaya devam eder. Entegre düşük voltaj koruma rölesi, araç akü voltajı belirlenen sınırın (örneğin 11.8V) altına indiğinde kameranın elektriğini otomatik keserek aracınızın aküsünün bitmesini kesinlikle engeller.'
+    answer: 'Evet. Akıllı park kiti sayesinde kontak kapandığında park moduna geçer; darbe veya hareket algıladığında kayıt alır. Akü koruma devresi sayesinde aküyü asla bitirmez.'
   },
   {
-    question: 'Montaj ve keşif hizmetiniz nereleri kapsıyor?',
-    answer: 'Topçam Güvenlik Sistemleri olarak başta İstanbul olmak üzere çevre illere yerinde keşif ve profesyonel mobil montaj hizmeti sunuyoruz. Kurumsal filo projeleri, şantiye ve fabrika iş makinesi kurulumlarında ise Türkiye genelinde proje bazlı hizmet sağlamaktayız.'
+    question: 'Montaj için adrese geliyor musunuz?',
+    answer: 'Evet. İstanbul ve çevre illere adresinizde mobil montaj hizmeti veriyoruz. Filo, fabrika ve şantiye iş makineleri projelerinde şehir dışına da yerinde kurulum yapıyoruz.'
   },
   {
-    question: 'Fiyatlandırma nasıl belirlenir ve nasıl teklif alabilirim?',
-    answer: 'Fiyatlarımız; kurulacak alanın büyüklüğüne, kamera ve sensör adedine, kablo mesafesine ve tercih edilen donanım özelliklerine (IP, AHD, 4K, gece renkli vb.) göre en uygun maliyetle optimize edilir. 0542 571 0078 numaralı WhatsApp hattımızdan veya iletişim formumuzdan mekanınızın detaylarını ileterek aynı gün içinde net fiyat teklifi alabilirsiniz.'
+    question: 'Fiyat nasıl belirlenir ve nasıl teklif alabilirim?',
+    answer: 'Fiyat; kurulacak mekan/araç tipine ve kamera adedine göre değişir. 0542 571 0078 WhatsApp hattımıza aracınızı veya mekanınızı yazarak aynı gün net fiyat alabilirsiniz.'
   }
 ]
