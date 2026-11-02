@@ -32,8 +32,6 @@ export function BlogContent() {
   return (
     <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Üst Başlık */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
             Blog & Teknik Yazılar
@@ -42,8 +40,6 @@ export function BlogContent() {
             Güvenlik kamerası teknolojileri, araç montaj ipuçları ve teknik rehberlerimiz çok yakında burada olacak.
           </p>
         </div>
-
-        {/* Yakında Gelecek Makaleler Vitrini */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {upcomingArticles.map((article, idx) => (
             <div
@@ -74,8 +70,6 @@ export function BlogContent() {
             </div>
           ))}
         </div>
-
-        {/* Sorularınız için İletişim Kutusu */}
         <div className="rounded-3xl bg-[#0B132B] text-white p-6 sm:p-10 text-center flex flex-col items-center shadow-apple-lg">
           <BookOpen className="w-10 h-10 text-blue-400 mb-3" />
           <h3 className="text-xl sm:text-2xl font-bold mb-2">

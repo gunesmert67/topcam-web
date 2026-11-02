@@ -1,6 +1,3 @@
-/**
- * Topçam Güvenlik Sistemleri - Otomatik Güvenlik ve Bütünlük Test Paketi (DAST & Unit)
- */
 
 import { escapeHtml, sanitizeHeaderValue, isValidEmail, sanitizeFilename } from '../lib/security.ts'
 import { checkRateLimit } from '../lib/rate-limit.ts'
@@ -24,7 +21,6 @@ console.log('\n==================================================')
 console.log('🛡️  TOPÇAM GÜVENLİK SİSTEMLERİ - GÜVENLİK TESTİ  🛡️')
 console.log('==================================================\n')
 
-// ─── 1. XSS ve HTML Injection Koruması ─────────────────────────────────────
 console.log('1. XSS ve HTML Enjeksiyonu Koruması:')
 assert(
   escapeHtml('<script>alert("xss")</script>') === '&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;',
@@ -36,7 +32,6 @@ assert(
 )
 assert(escapeHtml('') === '', 'Boş string güvenle işlendi')
 
-// ─── 2. CRLF ve E-posta Başlık Enjeksiyonu Koruması ────────────────────────
 console.log('\n2. E-posta Başlık ve HTTP Yanıt Bölme (CRLF) Koruması:')
 assert(
   sanitizeHeaderValue('Subject\r\nBcc: hacker@saldiri.com') === 'Subject Bcc: hacker@saldiri.com',
@@ -47,7 +42,6 @@ assert(
   'Çoklu yeni satır karakterleri arındırıldı'
 )
 
-// ─── 3. E-posta Doğrulama ve Format Denetimi ───────────────────────────────
 console.log('\n3. Katı E-posta Format Denetimi (RFC 5321 / RFC 5322):')
 assert(isValidEmail('kadirtopcam34@gmail.com'), 'Geçerli e-posta onaylandı')
 assert(isValidEmail('info@topcamguvenlik.com'), 'Kurumsal e-posta onaylandı')
@@ -56,7 +50,6 @@ assert(!isValidEmail('evil@domain.com\r\nBcc: hacker@evil.com'), 'CRLF içeren e
 assert(!isValidEmail(''), 'Boş e-posta reddedildi')
 assert(!isValidEmail('a'.repeat(300) + '@gmail.com'), 'RFC limitini aşan (254 char) e-posta reddedildi')
 
-// ─── 4. Dosya Adı ve Path Traversal Koruması ──────────────────────────────
 console.log('\n4. Path Traversal ve Dosya Adı Güvenliği:')
 assert(
   sanitizeFilename('../../etc/passwd') === '_.._etc_passwd',
@@ -67,13 +60,11 @@ assert(
   'Zararlı özel karakterler arındırıldı'
 )
 
-// ─── 5. Sliding-Window Hız Sınırlayıcı (Rate Limiting) Testi ───────────────
 console.log('\n5. DoS ve Brute Force Hız Sınırlayıcı (Rate Limiter):')
 const testIp = '192.168.1.999'
 const limit = 5
 const windowMs = 60000
 
-// 5 istek gönderilmeli
 let allAllowed = true
 for (let i = 0; i < limit; i++) {
   const res = checkRateLimit(testIp, limit, windowMs)
@@ -81,12 +72,10 @@ for (let i = 0; i < limit; i++) {
 }
 assert(allAllowed, 'İlk 5 istek başarıyla onaylandı (izin verilen limit)')
 
-// 6. istek 429 engeline takılmalı
 const blockedRes = checkRateLimit(testIp, limit, windowMs)
 assert(!blockedRes.success && blockedRes.remaining === 0, '6. istek hız sınırı aşıldığı için engellendi (HTTP 429)')
 assert(blockedRes.resetInSeconds > 0, 'Kalan bekleme süresi (resetInSeconds) doğru hesaplandı')
 
-// ─── 6. HTTP Güvenlik Başlıkları Statik Denetimi ───────────────────────────
 console.log('\n6. HTTP Güvenlik Başlıkları Yapılandırması (next.config.ts):')
 const nextConfigContent = fs.readFileSync(path.resolve('next.config.ts'), 'utf8')
 
@@ -97,7 +86,6 @@ assert(nextConfigContent.includes('Content-Security-Policy'), 'CSP (Content-Secu
 assert(nextConfigContent.includes('Permissions-Policy'), 'Permissions-Policy (Kamera/Mikrofon/Konum kısıtlamaları) tanımlı')
 assert(nextConfigContent.includes('poweredByHeader: false'), 'X-Powered-By gizleme aktif')
 
-// ─── 7. Görsel Asset Dosyalarının Bütünlük Testi ───────────────────────────
 console.log('\n7. WebP Görsellerin ve Varlıkların Varlık/Bütünlük Testi:')
 const requiredImages = [
   'public/images/topcam-logo.webp',

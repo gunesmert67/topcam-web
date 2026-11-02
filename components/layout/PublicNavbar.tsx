@@ -39,7 +39,6 @@ export function PublicNavbar() {
 
   return (
     <>
-      {/* ─── Yüzen Kapsül Navbar (Havkom Tarzı Floating Pill) ─── */}
       <header
         className={cn(
           'fixed top-2.5 sm:top-3 inset-x-3 sm:inset-x-6 lg:inset-x-[75px] xl:inset-x-32 z-50',
@@ -47,7 +46,6 @@ export function PublicNavbar() {
         )}
       >
         <div className="flex h-14 items-center justify-between px-3 sm:px-6">
-          {/* Logo & Marka */}
           <Link
             href={ROUTES.home}
             onClick={handleLogoClick}
@@ -73,8 +71,6 @@ export function PublicNavbar() {
               </span>
             </div>
           </Link>
-
-          {/* Desktop Navigasyon (Aralarında ince separator ile) */}
           <nav className="hidden lg:flex items-center" aria-label="Ana Navigasyon">
             {navLinks.map((link, index) => {
               const isActive = pathname === link.href || (link.href !== ROUTES.home && pathname.startsWith(link.href))
@@ -98,8 +94,6 @@ export function PublicNavbar() {
               )
             })}
           </nav>
-
-          {/* Sağ Hızlı Butonlar */}
           <div className="hidden lg:flex items-center gap-2.5">
             <a
               href={`tel:${siteConfig.contact.phoneRaw}`}
@@ -119,8 +113,6 @@ export function PublicNavbar() {
               <ChevronRight className="w-3.5 h-3.5" />
             </a>
           </div>
-
-          {/* Mobil Menü Butonları */}
           <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0">
             <a
               href={`tel:${siteConfig.contact.phoneRaw}`}
@@ -140,8 +132,6 @@ export function PublicNavbar() {
           </div>
         </div>
       </header>
-
-      {/* Mobil Menü Backdrop Overlay */}
       <div
         aria-hidden="true"
         onClick={() => setMobileMenuOpen(false)}
@@ -150,8 +140,6 @@ export function PublicNavbar() {
           mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
       />
-
-      {/* Mobil Menü Drawer — Havkom tarzı sibling to header */}
       <div
         id="mobile-menu"
         inert={!mobileMenuOpen ? true : undefined}

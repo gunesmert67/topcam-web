@@ -7,8 +7,6 @@ export function HizmetlerContent() {
   return (
     <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Başlık Bölümü */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
             Hizmetlerimiz
@@ -17,8 +15,6 @@ export function HizmetlerContent() {
             İş yeri, ev, tır, iş makinesi ve binek araçlar için profesyonel kamera ve alarm montajı.
           </p>
         </div>
-
-        {/* Hizmet Listesi - Detaylı Kartlar */}
         <div className="flex flex-col gap-16">
           {servicesData.map((service, index) => {
             const isEven = index % 2 === 0
@@ -29,8 +25,6 @@ export function HizmetlerContent() {
                 className="scroll-mt-28 rounded-3xl border border-border bg-card p-5 sm:p-8 lg:p-10 shadow-apple-lg transition-all"
               >
                 <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
-                  
-                  {/* Görsel */}
                   <div className={`lg:col-span-5 ${isEven ? '' : 'lg:order-2'}`}>
                     <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-white border border-border p-4 sm:p-6 flex items-center justify-center shadow-sm">
                       <Image
@@ -43,8 +37,6 @@ export function HizmetlerContent() {
                         {service.badge}
                       </span>
                     </div>
-
-                    {/* Teknik Özet Tablosu */}
                     <div className="mt-4 rounded-xl bg-secondary p-3.5 sm:p-4 border border-border text-xs flex flex-col gap-2">
                       <span className="font-bold text-foreground">Teknik Özellikler:</span>
                       {service.specs.map((sp, i) => (
@@ -55,8 +47,6 @@ export function HizmetlerContent() {
                       ))}
                     </div>
                   </div>
-
-                  {/* Metin İçeriği */}
                   <div className={`lg:col-span-7 flex flex-col gap-4 ${isEven ? '' : 'lg:order-1'}`}>
                     <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground">
                       {service.title}
@@ -64,8 +54,6 @@ export function HizmetlerContent() {
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                       {service.description}
                     </p>
-
-                    {/* Öne Çıkan Özellikler */}
                     <div className="pt-1 sm:pt-2">
                       <h3 className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
                         <Wrench className="w-4 h-4 text-blue-600" />
@@ -80,8 +68,6 @@ export function HizmetlerContent() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Uygulama Alanları */}
                     <div className="pt-1 sm:pt-2">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
                         Uygulama Alanları:
@@ -97,8 +83,6 @@ export function HizmetlerContent() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Butonlar */}
                     <div className="pt-4 border-t border-border flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                       <a
                         href={`https://wa.me/905425710078?text=Merhaba,%20${encodeURIComponent(service.title)}%20hizmetiniz%20hakk%C4%B1nda%20fiyat%20ve%20ke%C5%9Fif%20talebinde%20bulunmak%20istiyorum.`}
@@ -126,8 +110,6 @@ export function HizmetlerContent() {
             )
           })}
         </div>
-
-        {/* Alt Çağrı Kartı */}
         <div className="mt-20 rounded-3xl bg-[#0B132B] text-white p-8 sm:p-12 text-center flex flex-col items-center shadow-apple-lg">
           <ShieldCheck className="w-12 h-12 text-blue-400 mb-4" />
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">

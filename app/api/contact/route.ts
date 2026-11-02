@@ -3,9 +3,9 @@ import { Resend } from 'resend'
 import { escapeHtml, sanitizeHeaderValue, isValidEmail } from '@/lib/security'
 import { checkRateLimit, getClientIp } from '@/lib/rate-limit'
 
-const MAX_PAYLOAD_BYTES = 32 * 1024 // 32 KB maximum payload size
-const RATE_LIMIT_COUNT = 5 // max 5 requests
-const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000 // per 15 minutes
+const MAX_PAYLOAD_BYTES = 32 * 1024
+const RATE_LIMIT_COUNT = 5
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000
 
 const SECURITY_HEADERS = {
   'Cache-Control': 'no-store, no-cache, must-revalidate',
@@ -14,7 +14,6 @@ const SECURITY_HEADERS = {
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Content-Length Check (DoS Prevention)
     const contentLength = req.headers.get('content-length')
     if (contentLength && parseInt(contentLength, 10) > MAX_PAYLOAD_BYTES) {
       return NextResponse.json(
@@ -22,8 +21,6 @@ export async function POST(req: NextRequest) {
         { status: 413, headers: SECURITY_HEADERS }
       )
     }
-
-    // 2. Content-Type Check
     const contentType = req.headers.get('content-type') || ''
     if (!contentType.includes('application/json')) {
       return NextResponse.json(
@@ -31,8 +28,6 @@ export async function POST(req: NextRequest) {
         { status: 415, headers: SECURITY_HEADERS }
       )
     }
-
-    // 3. IP-based Rate Limiting
     const clientIp = getClientIp(req.headers)
     const rateLimit = checkRateLimit(clientIp, RATE_LIMIT_COUNT, RATE_LIMIT_WINDOW_MS)
 
@@ -54,8 +49,6 @@ export async function POST(req: NextRequest) {
         }
       )
     }
-
-    // 4. Safe JSON Parsing
     let body: Record<string, unknown>
     try {
       body = await req.json()
@@ -65,8 +58,6 @@ export async function POST(req: NextRequest) {
         { status: 400, headers: rateLimitHeaders }
       )
     }
-
-    // 5. Bot & Spam Honeypot Check
     if (body.website_hp || body.honeypot) {
       return NextResponse.json({ success: true }, { headers: rateLimitHeaders })
     }
@@ -76,39 +67,29 @@ export async function POST(req: NextRequest) {
     const email = typeof body.email === 'string' ? body.email.trim() : ''
     const phone = typeof body.phone === 'string' ? body.phone.trim() : ''
     const message = typeof body.message === 'string' ? body.message.trim() : ''
-
-    // 6. Strict Field Validation
     if (!name || (!email && !phone) || !message) {
       return NextResponse.json(
         { error: 'Lütfen adınızı, iletişim bilginizi (telefon veya e-posta) ve mesajınızı doldurun.' },
         { status: 400, headers: rateLimitHeaders }
       )
     }
-
-    // 7. Field Length Limits
     if (name.length > 100 || serviceType.length > 120 || phone.length > 35 || message.length > 3000) {
       return NextResponse.json(
         { error: 'Girilen alanlardan biri izin verilen maksimum uzunluğu aşıyor.' },
         { status: 400, headers: rateLimitHeaders }
       )
     }
-
-    // 8. Strict Email Format (if provided)
     if (email && !isValidEmail(email)) {
       return NextResponse.json(
         { error: 'Geçersiz e-posta adresi.' },
         { status: 400, headers: rateLimitHeaders }
       )
     }
-
-    // 9. Input Sanitization
     const safeName = escapeHtml(name)
     const safeServiceType = escapeHtml(serviceType || 'Genel Bilgi / Fiyat Talebi')
     const safePhone = escapeHtml(phone)
     const safeEmail = escapeHtml(email)
     const safeMessage = escapeHtml(message).replace(/\n/g, '<br/>')
-
-    // 10. Send Email via Resend if API key exists
     const resendApiKey = process.env.RESEND_API_KEY
     if (resendApiKey) {
       const resend = new Resend(resendApiKey)

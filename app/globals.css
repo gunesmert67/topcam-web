@@ -4,15 +4,14 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* ── Topçam Güvenlik Sistemleri Renk Paleti (Kolayca Değiştirilebilir Tema Değişkenleri) ── */
-  --background:          oklch(1 0 0);                   /* #FFFFFF */
-  --foreground:          oklch(0.16 0.04 240);           /* Koyu grafit/navy */
-  --primary:             oklch(0.51 0.22 255);           /* #1D4ED8 / #2563EB Elektrik/Güvenlik Mavisi */
-  --primary-hover:       oklch(0.44 0.22 255);           /* #1E40AF */
-  --primary-foreground:  oklch(0.99 0 0);                /* Beyaz */
-  --secondary:           oklch(0.97 0.005 240);          /* #F8FAFC Açık gri-mavi */
+  --background:          oklch(1 0 0);
+  --foreground:          oklch(0.16 0.04 240);
+  --primary:             oklch(0.51 0.22 255);
+  --primary-hover:       oklch(0.44 0.22 255);
+  --primary-foreground:  oklch(0.99 0 0);
+  --secondary:           oklch(0.97 0.005 240);
   --secondary-foreground:oklch(0.16 0.04 240);
-  --border:              oklch(0.89 0.01 240);           /* #E2E8F0 */
+  --border:              oklch(0.89 0.01 240);
   --input:               oklch(0.89 0.01 240);
   --card-bg:             #ffffff;
   --card:                oklch(1 0 0);
@@ -20,19 +19,17 @@
   --popover:             oklch(1 0 0);
   --popover-foreground:  oklch(0.16 0.04 240);
   --muted:               oklch(0.96 0.005 240);
-  --muted-foreground:    oklch(0.45 0.02 240);           /* Slate 500 */
+  --muted-foreground:    oklch(0.45 0.02 240);
   --accent:              oklch(0.96 0.005 240);
   --accent-foreground:   oklch(0.16 0.04 240);
-  --destructive:         oklch(0.55 0.22 25);            /* Alarm Kırmızısı */
+  --destructive:         oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
   --ring:                oklch(0.51 0.22 255);
 
-  /* Gölgelendirmeler */
   --shadow:              0 4px 24px -4px rgba(11,19,43,0.08), 0 2px 8px -2px rgba(11,19,43,0.05);
   --shadow-lg:           0 12px 40px -8px rgba(11,19,43,0.14), 0 4px 16px -4px rgba(11,19,43,0.08);
   --radius:              0.875rem;
 
-  /* Marka Renkleri */
   --navy:                #0B132B;
   --navy-mid:            #1C2541;
   --electric-blue:       #2563EB;
@@ -81,7 +78,6 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Glassmorphism ve modern arka plan efektleri */
 .glass-header {
   background: rgba(11, 19, 43, 0.88);
   backdrop-filter: blur(16px);
@@ -94,7 +90,6 @@ body {
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Hero desen arka planı */
 .hero-pattern {
   background-color: #070D1E;
   background-image: radial-gradient(rgba(37, 99, 235, 0.15) 1px, transparent 0);

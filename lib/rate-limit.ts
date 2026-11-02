@@ -1,8 +1,3 @@
-/**
- * Topçam Güvenlik In-Memory Sliding Window Rate Limiter
- * Protects public endpoints (like /api/contact) against brute force,
- * email bombing, and Denial of Service (DoS) attacks.
- */
 
 interface RateLimitRecord {
   timestamps: number[]
@@ -10,7 +5,7 @@ interface RateLimitRecord {
 
 const rateLimitMap = new Map<string, RateLimitRecord>()
 
-// Periodically clean up expired entries every 5 minutes to avoid memory leaks
+// Clean up expired sliding-window records every 5 minutes
 const CLEANUP_INTERVAL_MS = 5 * 60 * 1000
 let lastCleanup = Date.now()
 
@@ -34,13 +29,6 @@ export interface RateLimitResult {
   resetInSeconds: number
 }
 
-/**
- * Checks if the given key has exceeded the rate limit within the specified window.
- *
- * @param key Unique identifier (e.g., client IP address)
- * @param limit Maximum allowed requests within the time window
- * @param windowMs Time window in milliseconds (default: 15 minutes)
- */
 export function checkRateLimit(
   key: string,
   limit: number = 5,
@@ -51,7 +39,6 @@ export function checkRateLimit(
 
   const record = rateLimitMap.get(key) ?? { timestamps: [] }
   const cutoff = now - windowMs
-  // Keep only timestamps within the active sliding window
   record.timestamps = record.timestamps.filter(ts => ts > cutoff)
 
   if (record.timestamps.length >= limit) {
@@ -75,9 +62,6 @@ export function checkRateLimit(
   }
 }
 
-/**
- * Safely extracts client IP from request headers.
- */
 export function getClientIp(headers: Headers): string {
   const forwardedFor = headers.get('x-forwarded-for')
   if (forwardedFor) {

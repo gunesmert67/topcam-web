@@ -57,8 +57,6 @@ export function BrandsSection() {
   return (
     <section className="py-12 sm:py-16 bg-card border-b border-border select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Başlık Alanı */}
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-3xl font-extrabold text-foreground tracking-tight mb-2">
             Çalıştığımız & Kurulumunu Yaptığımız Markalar
@@ -67,8 +65,6 @@ export function BrandsSection() {
             Mekan ve araçlarınızda yalnızca resmi distribütör garantili, test edilmiş orijinal donanımlar kullanıyoruz.
           </p>
         </div>
-
-        {/* Markalar Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
           {brands.map((brand, index) => (
             <div
@@ -89,8 +85,6 @@ export function BrandsSection() {
             </div>
           ))}
         </div>
-
-        {/* Güven ve Garanti Notu */}
         <div className="mt-6 sm:mt-8 flex items-center justify-center gap-2 text-xs text-muted-foreground text-center">
           <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
           <span>Tüm donanımlar 2 yıl resmi distribütör garantilidir. İhtiyacınıza en uygun marka/modeli birlikte belirliyoruz.</span>

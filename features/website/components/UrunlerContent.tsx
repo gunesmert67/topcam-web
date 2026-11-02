@@ -22,8 +22,6 @@ export function UrunlerContent() {
   return (
     <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Üst Başlık */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
             Ürünlerimiz
@@ -32,11 +30,7 @@ export function UrunlerContent() {
             Araç ve mekan güvenliğinde kullandığımız garantili kamera ve donanım ürünleri.
           </p>
         </div>
-
-        {/* Arama ve Kategori Filtreleme Çubuğu */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
-          
-          {/* Kategori Butonları (Mobil Kaydırılabilir) */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 w-full md:w-auto -mx-4 px-4 sm:mx-0 sm:px-0 flex-nowrap sm:flex-wrap">
             {productCategories.map((cat) => (
               <button
@@ -54,8 +48,6 @@ export function UrunlerContent() {
               </button>
             ))}
           </div>
-
-          {/* Arama Inputu */}
           <div className="relative w-full md:w-64">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
             <input
@@ -68,8 +60,6 @@ export function UrunlerContent() {
           </div>
 
         </div>
-
-        {/* Ürünler Grid */}
         {filteredProducts.length === 0 ? (
           <div className="rounded-3xl border border-border p-12 text-center bg-card">
             <p className="text-muted-foreground text-sm">Aradığınız kriterlere uygun ürün bulunamadı.</p>
@@ -81,7 +71,6 @@ export function UrunlerContent() {
                 key={product.id}
                 className="flex flex-col rounded-3xl border border-border bg-card overflow-hidden shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:-translate-y-1 group"
               >
-                {/* Görsel Vitrini - Tam Sığdırılmış, Sıfır Kırpılma */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-white border-b border-border p-6 flex items-center justify-center">
                   <Image
                     src={product.image}
@@ -95,8 +84,6 @@ export function UrunlerContent() {
                     </span>
                   )}
                 </div>
-
-                {/* İçerik */}
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                   <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1.5">
                     {product.category}
@@ -107,8 +94,6 @@ export function UrunlerContent() {
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                     {product.description}
                   </p>
-
-                  {/* Özellikler */}
                   <div className="flex flex-col gap-1.5 mb-5 mt-auto">
                     {product.features.map((feat, i) => (
                       <div key={i} className="flex items-start gap-2 text-xs text-foreground/80 font-medium">
@@ -117,8 +102,6 @@ export function UrunlerContent() {
                       </div>
                     ))}
                   </div>
-
-                  {/* Teknik Tablo */}
                   <div className="rounded-xl bg-secondary p-3.5 border border-border text-xs mb-6 flex flex-col gap-1.5">
                     {product.specs.map((sp, idx) => (
                       <div key={idx} className="flex justify-between border-b border-border/50 pb-1 text-muted-foreground">
@@ -127,8 +110,6 @@ export function UrunlerContent() {
                       </div>
                     ))}
                   </div>
-
-                  {/* Buton */}
                   <a
                     href={`https://wa.me/905425710078?text=Merhaba,%20${encodeURIComponent(product.title)}%20hakk%C4%B1nda%20montaj%20ve%20fiyat%20bilgisi%20almak%20istiyorum.`}
                     target="_blank"

@@ -7,8 +7,6 @@ async function generateAssets() {
 
   const logoPath = path.resolve('public/images/topcam-logo.webp')
   const logoBuffer = await sharp(logoPath).resize(360, 360).toBuffer()
-
-  // 1. Apple Touch Icon (180x180)
   await sharp(logoPath)
     .resize(180, 180, { fit: 'contain', background: { r: 11, g: 19, b: 43, alpha: 1 } })
     .png()
@@ -20,8 +18,6 @@ async function generateAssets() {
     .png()
     .toFile('app/apple-icon.png')
   console.log('✔ app/apple-icon.png generated')
-
-  // 2. Favicons
   await sharp(logoPath)
     .resize(32, 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .png()
@@ -47,9 +43,6 @@ async function generateAssets() {
     .png()
     .toFile('public/android-chrome-512x512.png')
   console.log('✔ Favicons and Android Chrome icons generated')
-
-  // 3. Create WhatsApp & Social Media Open Graph Image (1200x630)
-  // WhatsApp crawler favors JPEG/PNG with high contrast branding
   const svgOverlay = Buffer.from(`
     <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -63,14 +56,11 @@ async function generateAssets() {
         </radialGradient>
       </defs>
 
-      <!-- Background -->
       <rect width="1200" height="630" fill="url(#bgGrad)"/>
       <rect width="1200" height="630" fill="url(#blueGlow)"/>
 
-      <!-- Accent Top Border -->
       <rect x="0" y="0" width="1200" height="6" fill="#2563EB"/>
 
-      <!-- Typography -->
       <g transform="translate(480, 210)">
         <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#60A5FA" letter-spacing="4">
           MOBİL &amp; SABİT GÜVENLİK SİSTEMLERİ
@@ -82,7 +72,6 @@ async function generateAssets() {
           Kamera • Alarm • Tır &amp; Araç Sistemleri • Santral
         </text>
         
-        <!-- Contact Badge -->
         <g transform="translate(0, 160)">
           <rect x="0" y="0" width="480" height="52" rx="14" fill="#0B132B" stroke="#334155" stroke-width="1.5"/>
           <text x="24" y="33" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#22C55E">
@@ -95,8 +84,6 @@ async function generateAssets() {
       </g>
     </svg>
   `)
-
-  // Composite SVG and Logo into 1200x630
   const ogImage = sharp({
     create: {
       width: 1200,
@@ -109,15 +96,11 @@ async function generateAssets() {
     { input: svgOverlay, top: 0, left: 0 },
     { input: logoBuffer, top: 135, left: 75 }
   ])
-
-  // Save as JPG (optimal for WhatsApp preview)
   await ogImage
     .clone()
     .jpeg({ quality: 90 })
     .toFile('public/images/og-image.jpg')
   console.log('✔ public/images/og-image.jpg generated (WhatsApp optimized)')
-
-  // Save as PNG
   await ogImage
     .clone()
     .png({ quality: 90 })

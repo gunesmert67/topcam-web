@@ -6,8 +6,6 @@ export function HakkimizdaContent() {
   return (
     <div className="pt-24 pb-14 sm:pt-32 sm:pb-20 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Üst Başlık */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
           <h1 className="text-3xl sm:text-5xl font-extrabold text-foreground tracking-tight mb-3">
             Hakkımızda
@@ -16,8 +14,6 @@ export function HakkimizdaContent() {
             Kadir Topçam yönetiminde mekan ve araç güvenlik sistemlerinde yerinde montaj ve temiz işçilik sunuyoruz.
           </p>
         </div>
-
-        {/* Ana İçerik & Görsel */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
           <div className="lg:col-span-6 flex flex-col gap-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
@@ -64,8 +60,6 @@ export function HakkimizdaContent() {
             </div>
           </div>
         </div>
-
-        {/* 2'li Özet Kart */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
           <div className="p-5 sm:p-7 rounded-3xl border border-border bg-card shadow-apple flex flex-col gap-2.5">
             <div className="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-1">
@@ -87,8 +81,6 @@ export function HakkimizdaContent() {
             </p>
           </div>
         </div>
-
-        {/* Kurumsal Değerler */}
         <div className="rounded-3xl bg-[#0B132B] text-white p-5 sm:p-8 lg:p-10 shadow-apple-lg select-none">
           <div className="text-center max-w-xl mx-auto mb-8">
             <h2 className="text-xl sm:text-2xl font-bold mb-2">Çalışma Standartlarımız</h2>

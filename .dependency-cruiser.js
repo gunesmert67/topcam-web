@@ -1,7 +1,6 @@
 /** @type {import('dependency-cruiser').IConfiguration} */
 module.exports = {
   forbidden: [
-    // ─── 1. Circular dependency yasağı ───────────────────────────────────────
     {
       name: 'no-circular',
       severity: 'error',
@@ -13,7 +12,6 @@ module.exports = {
       },
     },
 
-    // ─── 2. components/ → features/ yasağı ──────────────────────────────────
     {
       name: 'components-must-be-independent',
       severity: 'error',
@@ -27,7 +25,6 @@ module.exports = {
       },
     },
 
-    // ─── 3. lib/ → features/ yasağı ─────────────────────────────────────────
     {
       name: 'lib-must-be-independent',
       severity: 'error',
@@ -41,7 +38,6 @@ module.exports = {
       },
     },
 
-    // ─── 4. config/ → features/ yasağı ──────────────────────────────────────
     {
       name: 'config-must-be-independent',
       severity: 'error',
@@ -55,7 +51,6 @@ module.exports = {
       },
     },
 
-    // ─── 5. Cross-feature deep import yasağı ─────────────────────────────────
     {
       name: 'cross-feature-internal-isolation',
       severity: 'error',

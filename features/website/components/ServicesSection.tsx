@@ -8,8 +8,6 @@ export function ServicesSection() {
   return (
     <section className="py-14 sm:py-20 bg-secondary/50 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        {/* Bölüm Başlığı */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-foreground tracking-tight mb-2 sm:mb-3">
             Hizmet Alanlarımız
@@ -18,15 +16,12 @@ export function ServicesSection() {
             İş yeri, ev, tır, iş makinesi ve binek araçlar için anahtar teslim kamera ve alarm kurulumu.
           </p>
         </div>
-
-        {/* Hizmet Kartları Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {servicesData.map((service) => (
             <div
               key={service.id}
               className="group flex flex-col rounded-3xl border border-border bg-card overflow-hidden shadow-apple transition-all duration-300 hover:shadow-apple-lg hover:-translate-y-1"
             >
-              {/* Görsel Vitrini - Tam Sığdırılmış, Sıfır Kırpılma */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-white border-b border-border p-4 sm:p-6 flex items-center justify-center">
                 <Image
                   src={service.image}
@@ -38,8 +33,6 @@ export function ServicesSection() {
                   {service.badge}
                 </span>
               </div>
-
-              {/* İçerik */}
               <div className="flex flex-1 flex-col p-5 sm:p-7">
                 <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
                   {service.title}
@@ -47,8 +40,6 @@ export function ServicesSection() {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                   {service.summary}
                 </p>
-
-                {/* Öne çıkan maddeler */}
                 <div className="flex flex-col gap-2 mb-6 mt-auto">
                   {service.features.slice(0, 3).map((feat, i) => (
                     <div key={i} className="flex items-start gap-2 text-xs text-foreground/80 font-medium">
@@ -57,8 +48,6 @@ export function ServicesSection() {
                     </div>
                   ))}
                 </div>
-
-                {/* Alt Aksiyon Butonları */}
                 <div className="pt-4 border-t border-border flex items-center justify-between gap-3">
                   <Link
                     href={`/hizmetler#${service.slug}`}
@@ -81,8 +70,6 @@ export function ServicesSection() {
             </div>
           ))}
         </div>
-
-        {/* Alt Bilgi & Tümünü Gör */}
         <div className="mt-12 text-center">
           <Link
             href={ROUTES.services}

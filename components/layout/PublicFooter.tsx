@@ -12,8 +12,6 @@ export function PublicFooter() {
     <footer className="w-full bg-[#070D1E] border-t border-white/10 text-slate-300 pt-16 pb-8 select-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-12 border-b border-white/10">
-          
-          {/* Kolon 1: Marka ve Açıklama */}
           <div className="flex flex-col gap-4">
             <Link href={ROUTES.home} className="flex items-center gap-3">
               <div className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/20">
@@ -56,8 +54,6 @@ export function PublicFooter() {
               </a>
             </div>
           </div>
-
-          {/* Kolon 2: Hızlı Sayfalar */}
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">Kurumsal</h4>
             <ul className="flex flex-col gap-2.5 text-sm">
@@ -94,8 +90,6 @@ export function PublicFooter() {
               </li>
             </ul>
           </div>
-
-          {/* Kolon 3: Hizmetlerimiz */}
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">Çözümlerimiz</h4>
             <ul className="flex flex-col gap-2.5 text-sm">
@@ -131,8 +125,6 @@ export function PublicFooter() {
               </li>
             </ul>
           </div>
-
-          {/* Kolon 4: İletişim Bilgileri */}
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">İletişim</h4>
             <div className="flex flex-col gap-3 text-sm">
@@ -179,8 +171,6 @@ export function PublicFooter() {
           </div>
 
         </div>
-
-        {/* Alt Telif ve Yasal Linkler */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center sm:text-left">
           <p>© {currentYear} {siteConfig.name}. Tüm hakları saklıdır.</p>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4">

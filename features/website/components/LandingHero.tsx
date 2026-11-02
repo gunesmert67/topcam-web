@@ -7,29 +7,21 @@ import { ROUTES } from '@/config/routes'
 export function LandingHero() {
   return (
     <section className="relative overflow-hidden hero-pattern pt-24 pb-16 sm:pt-28 sm:pb-24 border-b border-white/10 select-none">
-      {/* Arka plan ışık efektleri */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-600/15 blur-[120px] pointer-events-none rounded-full" />
       <div className="absolute top-1/2 right-10 w-[300px] h-[300px] bg-cyan-500/10 blur-[100px] pointer-events-none rounded-full" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* Sol Kolon: Metin & CTA */}
           <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 text-center lg:text-left">
-            {/* Ana Başlık */}
             <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.2]">
               Mekanınız ve Araçlarınız İçin{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300">
                 Kesintisiz Güvenlik
               </span>
             </h1>
-
-            {/* Açıklama */}
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
               İş yeri, ev, tır, iş makinesi ve binek araçlar için profesyonel kamera ve alarm montajı. Telefondan 7/24 canlı izleme, temiz ve gizli kablolama.
             </p>
-
-            {/* Hızlı Avantaj Maddeleri */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 pt-1 text-xs sm:text-sm text-slate-200 text-left">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
@@ -56,8 +48,6 @@ export function LandingHero() {
                 <span className="truncate">Hızlı Teknik Servis</span>
               </div>
             </div>
-
-            {/* Eylem Butonları */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2 sm:pt-3">
               <a
                 href={siteConfig.contact.whatsappUrl}
@@ -77,8 +67,6 @@ export function LandingHero() {
                 <span>{siteConfig.contact.phoneFormatted}</span>
               </a>
             </div>
-
-            {/* İletişim e-posta & Instagram mini info */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-1 sm:pt-2 text-xs text-slate-400">
               <span className="break-all">📧 {siteConfig.contact.email}</span>
               <span className="hidden sm:inline">•</span>
@@ -93,14 +81,9 @@ export function LandingHero() {
             </div>
 
           </div>
-
-          {/* Sağ Kolon: Görsel Vitrin Kartları */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
-              {/* Ana Görsel Vitrin Kartı */}
               <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-slate-900/90 shadow-2xl p-3 flex flex-col gap-3">
-                {/* Beyaz Stüdyo Vitrin Alanı - Resim asla kırpılmaz */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-white p-4 flex items-center justify-center">
                   <Image
                     src="/images/guvenlik-kamera-sistemi.webp"
@@ -113,8 +96,6 @@ export function LandingHero() {
                     İş Yeri & Konut Çözümleri
                   </span>
                 </div>
-
-                {/* Alt Açıklama Bandı - Görseli kapatmaz */}
                 <div className="p-2 text-left">
                   <h3 className="text-white text-base font-bold leading-snug">
                     IP & AHD Gece Görüşlü Kamera Sistemleri
@@ -124,8 +105,6 @@ export function LandingHero() {
                   </p>
                 </div>
               </div>
-
-              {/* Alt Floating Kartlar - Tam Sığdırılmış Görseller */}
               <div className="mt-3.5 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5">
                 <Link
                   href={ROUTES.serviceTrucks}

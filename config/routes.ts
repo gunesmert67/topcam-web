@@ -1,7 +1,3 @@
-/**
- * Topçam Güvenlik Sistemleri - Merkezi Rota Yönetimi
- * Tüm URL ve sayfa yolları kırık linkleri önlemek için buradan yönetilir.
- */
 
 export const ROUTES = {
   home: '/',
@@ -13,8 +9,6 @@ export const ROUTES = {
   kvkk: '/kvkk',
   privacy: '/gizlilik-politikasi',
   cookie: '/cerez-politikasi',
-
-  // Hizmet Çapa (Anchor) Linkleri
   serviceCameras: '/hizmetler#guvenlik-kamera-sistemleri',
   serviceTrucks: '/hizmetler#tir-ve-agır-vasita-kamera-sistemleri',
   serviceMachinery: '/hizmetler#is-makinesi-kamera-sistemleri',

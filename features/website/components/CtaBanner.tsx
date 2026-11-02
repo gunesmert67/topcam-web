@@ -9,8 +9,6 @@ export function CtaBanner() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* Sol: Bilgi & Hızlı İletişim */}
           <div className="lg:col-span-6 flex flex-col gap-5 sm:gap-6 text-center lg:text-left">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
               Güvenliğinizi Ertelemeyin,{' '}
@@ -48,8 +46,6 @@ export function CtaBanner() {
               <p>⏱️ {siteConfig.contact.workHours}</p>
             </div>
           </div>
-
-          {/* Sağ: İletişim Formu */}
           <div className="lg:col-span-6 text-foreground">
             <ContactForm />
           </div>
