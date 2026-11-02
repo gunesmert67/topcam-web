@@ -59,6 +59,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: baseUrl,
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/android-chrome-192x192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.webmanifest',
   formatDetection: {
     email: false,
     address: false,
@@ -85,10 +98,18 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/topcam-logo.webp',
-        width: 500,
-        height: 500,
-        alt: 'Topçam Güvenlik Sistemleri Logo',
+        url: `${baseUrl}/images/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Topçam Güvenlik Sistemleri — Kamera & Alarm Sistemleri',
+        type: 'image/jpeg',
+      },
+      {
+        url: `${baseUrl}/images/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Topçam Güvenlik Sistemleri — Kamera & Alarm Sistemleri',
+        type: 'image/png',
       },
     ],
   },
@@ -97,7 +118,7 @@ export const metadata: Metadata = {
     title: 'Topçam Güvenlik Sistemleri | Mobil Güvenlik, Kamera ve Alarm',
     description:
       'İş yeri, ev ve araç güvenlik kamera sistemleri montaj ve teknik servisi.',
-    images: ['/images/topcam-logo.webp'],
+    images: [`${baseUrl}/images/og-image.jpg`],
   },
 }
 
@@ -110,7 +131,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Topçam Güvenlik Sistemleri',
-    image: `${baseUrl}/images/topcam-logo.webp`,
+    image: `${baseUrl}/images/og-image.jpg`,
     '@id': `${baseUrl}/#localbusiness`,
     url: baseUrl,
     telephone: siteConfig.contact.phoneRaw,

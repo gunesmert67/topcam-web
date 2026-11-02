@@ -109,6 +109,13 @@ const requiredImages = [
   'public/images/kamera-server.webp',
   'public/favicon.ico',
   'public/favicon.png',
+  'public/favicon-32x32.png',
+  'public/favicon-16x16.png',
+  'public/apple-touch-icon.png',
+  'public/android-chrome-192x192.png',
+  'public/android-chrome-512x512.png',
+  'public/images/og-image.jpg',
+  'public/images/og-image.png',
   'app/icon.png',
   'app/apple-icon.png'
 ]
