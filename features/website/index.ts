@@ -1,4 +1,5 @@
 export { LandingHero } from './components/LandingHero'
+export { BrandsSection } from './components/BrandsSection'
 export { ServicesSection } from './components/ServicesSection'
 export { WhyUsSection } from './components/WhyUsSection'
 export { ProductsShowcase } from './components/ProductsShowcase'

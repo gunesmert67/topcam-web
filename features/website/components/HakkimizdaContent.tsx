@@ -126,7 +126,7 @@ export function HakkimizdaContent() {
               <CheckCircle2 className="w-4 h-4 text-blue-400" />
               <h4 className="text-sm font-bold text-white">Orijinal Ekipman</h4>
               <p className="text-xs text-slate-400">
-                Garantili kamera, lens ve kayıt donanımları.
+                Dahua, Hikvision, Eurocam, Inox ve Haikon garantili ürünler.
               </p>
             </div>
           </div>
