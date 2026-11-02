@@ -108,7 +108,6 @@ const requiredImages = [
   'public/images/alarm-sistemleri.webp',
   'public/images/kamera-server.webp',
   'public/favicon.ico',
-  'public/favicon.png',
   'public/favicon-32x32.png',
   'public/favicon-16x16.png',
   'public/apple-touch-icon.png',
