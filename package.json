@@ -17,10 +17,6 @@
     "verify": "npm run typecheck && npm run lint && npm run knip && npm run madge && npm run architecture-check && npm run test:security && npm run audit:cve",
     "ci": "npm run verify && npm run build"
   },
-  "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=10.0.0"
-  },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@vercel/analytics": "^2.0.1",
