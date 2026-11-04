@@ -88,7 +88,7 @@ export function HizmetlerContent() {
                         href={`https://wa.me/905425710078?text=Merhaba,%20${encodeURIComponent(service.title)}%20hizmetiniz%20hakk%C4%B1nda%20fiyat%20ve%20ke%C5%9Fif%20talebinde%20bulunmak%20istiyorum.`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center min-h-[44px] gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.99] hover:scale-105"
+                        className="inline-flex items-center justify-center min-h-[44px] gap-2 px-6 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.99] hover:scale-105"
                       >
                         <span>WhatsApp’tan Fiyat & Keşif İste</span>
                         <ArrowRight className="w-4 h-4" />

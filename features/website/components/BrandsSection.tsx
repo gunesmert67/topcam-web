@@ -79,7 +79,7 @@ export function BrandsSection() {
               <span className="text-[11px] font-medium text-muted-foreground truncate w-full">
                 {brand.category}
               </span>
-              <span className="mt-1.5 inline-block text-[9px] font-bold text-blue-600/90 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200/60">
+              <span className="mt-1.5 inline-block text-[9px] font-bold text-blue-800 dark:text-blue-200 bg-blue-100/70 dark:bg-blue-950/60 px-2 py-0.5 rounded-md border border-blue-200 dark:border-blue-800/60">
                 {brand.highlight}
               </span>
             </div>

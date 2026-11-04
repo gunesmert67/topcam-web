@@ -97,9 +97,9 @@ export function LandingHero() {
                   </span>
                 </div>
                 <div className="p-2 text-left">
-                  <h3 className="text-white text-base font-bold leading-snug">
+                  <p className="text-white text-base font-bold leading-snug">
                     IP & AHD Gece Görüşlü Kamera Sistemleri
-                  </h3>
+                  </p>
                   <p className="text-slate-300 text-xs mt-1">
                     Telefon ve bilgisayarınızdan canlı izleme, geriye dönük sesli kayıt ve akıllı bildirimler
                   </p>
@@ -119,7 +119,7 @@ export function LandingHero() {
                     />
                   </div>
                   <div className="text-left min-w-0">
-                    <h4 className="text-xs font-bold text-white truncate">Tır & Kamyon</h4>
+                    <p className="text-xs font-bold text-white truncate">Tır & Kamyon</p>
                     <p className="text-[10px] text-slate-300 truncate">Kör nokta & Mobil DVR</p>
                   </div>
                 </Link>
@@ -137,7 +137,7 @@ export function LandingHero() {
                     />
                   </div>
                   <div className="text-left min-w-0">
-                    <h4 className="text-xs font-bold text-white truncate">Binek Araç</h4>
+                    <p className="text-xs font-bold text-white truncate">Binek Araç</p>
                     <p className="text-[10px] text-slate-300 truncate">Ön & Arka Yol Kayıt</p>
                   </div>
                 </Link>

@@ -32,21 +32,21 @@ export function IletisimContent() {
                 <span className="text-xs text-muted-foreground mt-0.5">Haftanın 7 günü doğrudan arayabilirsiniz</span>
               </div>
             </div>
-            <div className="rounded-3xl border border-emerald-200 bg-emerald-50/40 p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
-              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md">
+            <div className="rounded-3xl border border-emerald-200 bg-emerald-50/40 dark:bg-emerald-950/20 p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-700 text-white flex items-center justify-center shrink-0 shadow-md">
                 <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="flex flex-col min-w-0">
-                <span className="text-[11px] sm:text-xs font-semibold text-emerald-800 uppercase tracking-wider">WhatsApp Hızlı Destek</span>
+                <span className="text-[11px] sm:text-xs font-semibold text-emerald-800 dark:text-emerald-300 uppercase tracking-wider">WhatsApp Hızlı Destek</span>
                 <a
                   href={siteConfig.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base sm:text-lg font-bold text-emerald-950 hover:underline mt-0.5 truncate"
+                  className="text-base sm:text-lg font-bold text-emerald-950 dark:text-emerald-200 hover:underline mt-0.5 truncate"
                 >
                   Anında Mesaj Gönderin
                 </a>
-                <span className="text-xs text-emerald-700 mt-0.5">Fotoğraf veya video ileterek hızlı fiyat alın</span>
+                <span className="text-xs text-emerald-800 dark:text-emerald-400 mt-0.5">Fotoğraf veya video ileterek hızlı fiyat alın</span>
               </div>
             </div>
             <div className="rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-apple flex items-start gap-3.5 sm:gap-4">

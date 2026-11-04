@@ -26,7 +26,7 @@ export function CtaBanner() {
                 href={siteConfig.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-xl shadow-emerald-950/40 active:scale-[0.99] transition-all hover:scale-[1.02]"
+                className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm shadow-xl shadow-emerald-950/40 active:scale-[0.99] transition-all hover:scale-[1.02]"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp’tan Anında Yazın</span>

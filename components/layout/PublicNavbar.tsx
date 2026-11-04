@@ -107,7 +107,7 @@ export function PublicNavbar() {
               href={siteConfig.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 rounded-xl shadow-md shadow-emerald-950/30 transition-all hover:scale-[1.02]"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-600 px-3 py-1.5 rounded-xl shadow-md shadow-emerald-950/30 transition-all hover:scale-[1.02]"
             >
               <span>Fiyat Al</span>
               <ChevronRight className="w-3.5 h-3.5" />
@@ -186,7 +186,7 @@ export function PublicNavbar() {
             href={siteConfig.contact.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full min-h-[44px] py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 active:scale-[0.99] transition-all"
+            className="flex items-center justify-center gap-2 w-full min-h-[44px] py-3 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 active:scale-[0.99] transition-all"
           >
             <span>WhatsApp Fiyat & Bilgi</span>
           </a>

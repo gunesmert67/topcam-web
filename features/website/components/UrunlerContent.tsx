@@ -85,12 +85,12 @@ export function UrunlerContent() {
                   )}
                 </div>
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
-                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1.5">
+                  <span className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wider mb-1.5">
                     {product.category}
                   </span>
-                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
+                  <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
                     {product.title}
-                  </h3>
+                  </h2>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                     {product.description}
                   </p>

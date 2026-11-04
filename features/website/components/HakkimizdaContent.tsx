@@ -52,7 +52,7 @@ export function HakkimizdaContent() {
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
-                    <h3 className="text-xs font-bold text-white">Topçam Standartları</h3>
+                    <p className="text-xs font-bold text-white">Topçam Standartları</p>
                     <p className="text-[11px] text-slate-300">Orijinal garantili ürünler & yerinde mobil montaj</p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export function HakkimizdaContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-blue-400" />
-              <h4 className="text-sm font-bold text-white">Net & Şeffaf Fiyat</h4>
+              <h3 className="text-sm font-bold text-white">Net & Şeffaf Fiyat</h3>
               <p className="text-xs text-slate-400">
                 Sürpriz masraf olmadan iş başında konuşulan net fiyat.
               </p>
@@ -100,7 +100,7 @@ export function HakkimizdaContent() {
 
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-blue-400" />
-              <h4 className="text-sm font-bold text-white">Yerinde Mobil Montaj</h4>
+              <h3 className="text-sm font-bold text-white">Yerinde Mobil Montaj</h3>
               <p className="text-xs text-slate-400">
                 Adresinize gelerek mekanınızda veya aracınızda montaj.
               </p>
@@ -108,7 +108,7 @@ export function HakkimizdaContent() {
 
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-blue-400" />
-              <h4 className="text-sm font-bold text-white">Satış Sonrası Destek</h4>
+              <h3 className="text-sm font-bold text-white">Satış Sonrası Destek</h3>
               <p className="text-xs text-slate-400">
                 İş bittikten sonra da telefon ve WhatsApp ile anında destek.
               </p>
@@ -116,7 +116,7 @@ export function HakkimizdaContent() {
 
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-blue-400" />
-              <h4 className="text-sm font-bold text-white">Orijinal Ekipman</h4>
+              <h3 className="text-sm font-bold text-white">Orijinal Ekipman</h3>
               <p className="text-xs text-slate-400">
                 Dahua, Hikvision, Eurocam, Inox ve Haikon garantili ürünler.
               </p>

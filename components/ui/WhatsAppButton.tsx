@@ -11,7 +11,7 @@ export function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp İle Hızlı İletişime Geçin"
-        className="group flex items-center gap-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white p-3 sm:px-4 sm:py-3 shadow-xl shadow-emerald-950/40 transition-all duration-300 hover:scale-105 active:scale-95"
+        className="group flex items-center gap-2.5 rounded-full bg-emerald-700 hover:bg-emerald-600 text-white p-3 sm:px-4 sm:py-3 shadow-xl shadow-emerald-950/40 transition-all duration-300 hover:scale-105 active:scale-95"
       >
         <div className="relative">
           <MessageCircle className="w-6 h-6 fill-white" />

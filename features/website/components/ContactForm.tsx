@@ -60,7 +60,7 @@ export function ContactForm() {
 
   return (
     <div className="rounded-3xl border border-border bg-card p-4 sm:p-8 shadow-apple-lg">
-      <h3 className="text-xl font-bold text-foreground mb-2">Ücretsiz Keşif & Fiyat Teklifi İsteyin</h3>
+      <h2 className="text-xl font-bold text-foreground mb-2">Ücretsiz Keşif & Fiyat Teklifi İsteyin</h2>
       <p className="text-sm text-muted-foreground mb-6">
         İhtiyacınız olan güvenlik veya kamera sistemini belirtin, size en uygun çözümü ve fiyatı hazırlayalım.
       </p>
@@ -68,7 +68,7 @@ export function ContactForm() {
       {status === 'success' ? (
         <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-6 text-center animate-in fade-in">
           <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
-          <h4 className="text-base font-bold text-emerald-900 mb-1">Talebiniz Alındı!</h4>
+          <p className="text-base font-bold text-emerald-900 mb-1">Talebiniz Alındı!</p>
           <p className="text-sm text-emerald-700 mb-4 leading-relaxed">
             Bilgileriniz Kadir Topçam ve ekibine ulaştı. En kısa sürede telefon veya e-posta yoluyla sizinle iletişime geçeceğiz.
           </p>

@@ -55,7 +55,7 @@ export function PublicFooter() {
             </div>
           </div>
           <div className="flex flex-col gap-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">Kurumsal</h4>
+            <p className="text-sm font-bold uppercase tracking-wider text-white">Kurumsal</p>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
                 <Link href={ROUTES.home} className="hover:text-white transition-colors">
@@ -91,7 +91,7 @@ export function PublicFooter() {
             </ul>
           </div>
           <div className="flex flex-col gap-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">Çözümlerimiz</h4>
+            <p className="text-sm font-bold uppercase tracking-wider text-white">Çözümlerimiz</p>
             <ul className="flex flex-col gap-2.5 text-sm">
               <li>
                 <Link href={ROUTES.serviceCameras} className="hover:text-white transition-colors">
@@ -126,7 +126,7 @@ export function PublicFooter() {
             </ul>
           </div>
           <div className="flex flex-col gap-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-white">İletişim</h4>
+            <p className="text-sm font-bold uppercase tracking-wider text-white">İletişim</p>
             <div className="flex flex-col gap-3 text-sm">
               <a
                 href={`tel:${siteConfig.contact.phoneRaw}`}
