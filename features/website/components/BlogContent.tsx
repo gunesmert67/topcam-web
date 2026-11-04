@@ -59,13 +59,13 @@ export function BlogContent() {
               <h2 className="text-base font-bold text-foreground mb-2 leading-snug">
                 {article.title}
               </h2>
-              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-4">
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                 {article.summary}
               </p>
 
-              <div className="mt-auto pt-3 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+              <div className="mt-auto pt-3 border-t border-border flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
                 <span>{article.readTime}</span>
-                <span className="font-semibold text-slate-400">Yayına Hazırlanıyor</span>
+                <span className="font-semibold text-slate-700 dark:text-slate-300">Yayına Hazırlanıyor</span>
               </div>
             </div>
           ))}
